@@ -4,9 +4,6 @@ import commonjs from "vite-plugin-commonjs";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    // svgr(), same for svg
-    commonjs(),
-  ],
+  plugins: [react(), commonjs()],
+  base: "/algota/",
 });
