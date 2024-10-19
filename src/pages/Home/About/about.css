@@ -1,0 +1,206 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Start About                                */
+/* -------------------------------------------------------------------------- */
+.about {
+  padding-top: 90px;
+}
+.about .back-image {
+  position: relative;
+  width: 100%;
+  opacity: 0.4;
+  z-index: -5;
+}
+@media (max-width: 820px) {
+  .about .back-image {
+    position: relative;
+    width: 100%;
+    z-index: -5;
+  }
+}
+@media (max-width: 767px) {
+  .about .back-image {
+    position: relative;
+    width: 100%;
+    z-index: -5;
+  }
+}
+.about .front-image {
+  position: absolute;
+  margin-top: 90px;
+  width: 44%;
+  height: 650px;
+  left: 0;
+}
+@media (max-width: 820px) {
+  .about .front-image {
+    position: absolute;
+    width: 40%;
+    height: 50vh;
+    left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .about .front-image {
+    display: none;
+  }
+}
+.about h1 {
+  text-align: center;
+  font-size: 40px;
+  color: var(--main-color);
+  text-shadow: 7px 8px 15px;
+  opacity: 0.7;
+}
+.about .para-about {
+  position: absolute;
+  direction: rtl;
+}
+.about .para-about span {
+  font-family: var(--second-font);
+  color: var(--main-color);
+  width: 80%;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  font-size: 25px;
+  display: flex;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.p2 {
+  display: none;
+}
+.p3 {
+  display: none;
+}
+.about .para-about .p1 {
+  font-family: var(--second-font);
+  color: var(--main-color);
+  background-color: #ffffff90;
+  width: 50%;
+  margin-right: 50px;
+  margin-top: 60px;
+  padding: 25px;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  word-spacing: 5px;
+  border: 2px;
+  border-radius: 40px;
+  box-shadow: 10px 15px 30px;
+  transition: 0.3s;
+}
+.about .para-about .p1:hover {
+  border: 2px;
+  border-radius: 40px;
+  box-shadow: 8px 8px 30px;
+  transition: 0.3s;
+}
+
+@media (max-width: 1400px) {
+  .about .para-about .p1 {
+    display: none;
+  }
+  .about .para-about .p2 {
+    display: block;
+    font-family: var(--second-font);
+    color: var(--main-color);
+    background-color: #ffffff90;
+    width: 50%;
+    margin-right: 50px;
+    margin-top: 60px;
+    padding: 25px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 5px;
+    border: 2px;
+    border-radius: 40px;
+    box-shadow: 10px 15px 30px;
+    transition: 0.3s;
+  }
+  .about .para-about .p2:hover {
+    border: 2px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 30px;
+    transition: 0.3s;
+  }
+}
+@media (max-width: 1100px) {
+  .about .front-image {
+    display: none;
+  }
+  .about .para-about .p1 {
+    display: none;
+  }
+  .about .para-about .p2 {
+    display: block;
+    font-family: var(--second-font);
+    color: var(--main-color);
+    background-color: #ffffff90;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    padding: 25px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 5px;
+    border: 2px;
+    border-radius: 40px;
+    box-shadow: 10px 15px 30px;
+    transition: 0.3s;
+  }
+  .about .para-about .p2:hover {
+    border: 2px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 30px;
+    transition: 0.3s;
+  }
+}
+@media (max-width: 1024px) and (min-height: 1366px) {
+  .about {
+    padding-top: 90px;
+    height: 700px;
+  }
+}
+@media (max-width: 820px) {
+  .about {
+    padding-top: 30px;
+    height: 500px;
+  }
+  .about .para-about .p2 {
+    display: none;
+  }
+  .about .para-about .p3 {
+    display: block;
+    font-family: var(--second-font);
+    color: var(--main-color);
+    background-color: #ffffff90;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 5px;
+    border: 2px;
+    border-radius: 40px;
+    box-shadow: 10px 15px 30px;
+    transition: 0.3s;
+  }
+  .about .para-about .p3:hover {
+    border: 2px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 30px;
+    transition: 0.3s;
+  }
+}

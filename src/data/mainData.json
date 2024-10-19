@@ -1,0 +1,1883 @@
+[
+  {
+    "parent": 1,
+    "children": [
+      {
+        "name": "بهارات أورغانو",
+        "productId": "111"
+      },
+      {
+        "name": "بهارات بيتزا",
+        "productId": "112"
+      },
+      {
+        "name": "سبع بهارات",
+        "productId": "113"
+      },
+      {
+        "name": "عصفر",
+        "productId": "114"
+      },
+      {
+        "name": "بهارات فلافل",
+        "productId": "115"
+      },
+      {
+        "name": "فلفل أسود مطحون",
+        "productId": "116"
+      },
+      {
+        "name": "فليفلة حلوة",
+        "productId": "117"
+      },
+      {
+        "name": "قرفة مطحونة",
+        "productId": "118"
+      },
+      {
+        "name": "بهارات كبسة",
+        "productId": "119"
+      },
+      {
+        "name": "كمون مطحون",
+        "productId": "120"
+      },
+      {
+        "name": "بهارات مرقة دجاج",
+        "productId": "121"
+      },
+      {
+        "name": "بهارات مندي",
+        "productId": "122"
+      },
+      {
+        "name": "نعنع يابس",
+        "productId": "123"
+      },
+      {
+        "name": "حب الهال",
+        "productId": "124"
+      },
+      {
+        "name": "شمرا ناعمة",
+        "productId": "125"
+      },
+      {
+        "name": "حب الهال المطحون",
+        "productId": "127"
+      },
+      {
+        "name": "أشلميش",
+        "productId": "128"
+      },
+      {
+        "name": "أكليل الجبل",
+        "productId": "129"
+      },
+      {
+        "name": "بهارات أوزي",
+        "productId": "131"
+      },
+      {
+        "name": "بهارات برياني",
+        "productId": "132"
+      },
+      {
+        "name": "جوزة الطيب حب",
+        "productId": "134"
+      },
+      {
+        "name": "جوز هند",
+        "productId": "135"
+      },
+      {
+        "name": "حبة البركة",
+        "productId": "136"
+      },
+      {
+        "name": "بهار حلو مطحون",
+        "productId": "137"
+      },
+      {
+        "name": "حمض الليمون",
+        "productId": "138"
+      },
+      {
+        "name": "بهارات دجاج",
+        "productId": "139"
+      },
+      {
+        "name": "زنجبيل حب",
+        "productId": "140"
+      },
+      {
+        "name": "زنجبيل مطحون",
+        "productId": "141"
+      },
+      {
+        "name": "سكر نبات مكعبات",
+        "productId": "143"
+      },
+      {
+        "name": "سماق مقشور",
+        "productId": "144"
+      },
+      {
+        "name": "سمسم خام",
+        "productId": "145"
+      },
+      {
+        "name": "سمسم مقشور",
+        "productId": "146"
+      },
+      {
+        "name": "بهارات سمك",
+        "productId": "147"
+      },
+      {
+        "name": "شطة مطحونة",
+        "productId": "148"
+      },
+      {
+        "name": "بهارات شيش",
+        "productId": "150"
+      },
+      {
+        "name": "صنوبر بلدي",
+        "productId": "151"
+      },
+      {
+        "name": "فرمسيل زينة",
+        "productId": "153"
+      },
+      {
+        "name": "بهارات فاهيتا",
+        "productId": "154"
+      },
+      {
+        "name": "فستق عبيد مقشور",
+        "productId": "155"
+      },
+      {
+        "name": "فلفل أبيض مطحون",
+        "productId": "156"
+      },
+      {
+        "name": "فلفل أسود حب",
+        "productId": "157"
+      },
+      {
+        "name": "فيفلة حلوة (بابريكا)",
+        "productId": "159"
+      },
+      {
+        "name": "قرفة عيدان",
+        "productId": "160"
+      },
+      {
+        "name": "قلي",
+        "productId": "161"
+      },
+      {
+        "name": "كاجو",
+        "productId": "162"
+      },
+      {
+        "name": "كربونة",
+        "productId": "163"
+      },
+      {
+        "name": "كربونة",
+        "productId": "164"
+      },
+      {
+        "name": "كركم",
+        "productId": "165"
+      },
+      {
+        "name": "كزبرة حب",
+        "productId": "166"
+      },
+      {
+        "name": "كزبرة مطحونة",
+        "productId": "167"
+      },
+      {
+        "name": "كلس",
+        "productId": "168"
+      },
+      {
+        "name": "لوز بلدي مقشور",
+        "productId": "170"
+      },
+      {
+        "name": "محلب ناعم",
+        "productId": "171"
+      },
+      {
+        "name": "محلب حب",
+        "productId": "172"
+      },
+      {
+        "name": "بهارات مشوي",
+        "productId": "174"
+      },
+      {
+        "name": "نشاء الذرة الناعم",
+        "productId": "176"
+      },
+      {
+        "name": "يانسون ناعم",
+        "productId": "180"
+      },
+      {
+        "name": "يانسون حب",
+        "productId": "181"
+      },
+      {
+        "name": "Organo spices",
+        "productId": "e111"
+      },
+      {
+        "name": "Pizza spices",
+        "productId": "e112"
+      },
+      {
+        "name": "Seven Spices",
+        "productId": "e113"
+      },
+      {
+        "name": "Safflower",
+        "productId": "e114"
+      },
+      {
+        "name": "Falafel spices",
+        "productId": "e115"
+      },
+      {
+        "name": "Glorious black pepper",
+        "productId": "e116"
+      },
+      {
+        "name": "Sweet red pepper",
+        "productId": "e117"
+      },
+      {
+        "name": "Ground Cinnamon",
+        "productId": "e118"
+      },
+      {
+        "name": "Kabsa spices",
+        "productId": "e119"
+      },
+      {
+        "name": "Ground cumin",
+        "productId": "e120"
+      },
+      {
+        "name": "Chicken stock Spices",
+        "productId": "e121"
+      },
+      {
+        "name": "Mendi spices",
+        "productId": "e122"
+      },
+      {
+        "name": "Dry mint",
+        "productId": "e123"
+      },
+      {
+        "name": "Cardamom pads",
+        "productId": "e124"
+      },
+      {
+        "name": "Soft Shamra",
+        "productId": "e125"
+      },
+      {
+        "name": "Grilled cardamom",
+        "productId": "e127"
+      },
+      {
+        "name": "Ashmish",
+        "productId": "e128"
+      },
+      {
+        "name": "Creator of the mountain",
+        "productId": "e129"
+      },
+      {
+        "name": "Ozi spices",
+        "productId": "e131"
+      },
+      {
+        "name": "British spices",
+        "productId": "e132"
+      },
+      {
+        "name": "Nutmeg",
+        "productId": "e134"
+      },
+      {
+        "name": "Coconut",
+        "productId": "e135"
+      },
+      {
+        "name": "Black seed",
+        "productId": "e136"
+      },
+      {
+        "name": "Sweet crushed spices",
+        "productId": "e137"
+      },
+      {
+        "name": "Lemon acid",
+        "productId": "e138"
+      },
+      {
+        "name": "Chicken spices",
+        "productId": "e139"
+      },
+      {
+        "name": "Ginger",
+        "productId": "e140"
+      },
+      {
+        "name": "Ground Ginger",
+        "productId": "e141"
+      },
+      {
+        "name": "Cubes Plant Sugar",
+        "productId": "e143"
+      },
+      {
+        "name": "Sumac",
+        "productId": "e144"
+      },
+      {
+        "name": "Raw sesame",
+        "productId": "e145"
+      },
+      {
+        "name": "Peelnous Sesame",
+        "productId": "e146"
+      },
+      {
+        "name": "Fish spices",
+        "productId": "e147"
+      },
+      {
+        "name": "Glip",
+        "productId": "e148"
+      },
+      {
+        "name": "Shish spices",
+        "productId": "e150"
+      },
+      {
+        "name": "Poplar",
+        "productId": "e151"
+      },
+      {
+        "name": "Fermelsel Zina",
+        "productId": "e153"
+      },
+      {
+        "name": "Fajita spices",
+        "productId": "e154"
+      },
+      {
+        "name": "Pistachio peeling",
+        "productId": "e155"
+      },
+      {
+        "name": "Glorious white pepper",
+        "productId": "e156"
+      },
+      {
+        "name": "Black pepper",
+        "productId": "e157"
+      },
+      {
+        "name": "Paullea (Paprika)",
+        "productId": "e159"
+      },
+      {
+        "name": "Cinnamon",
+        "productId": "e160"
+      },
+      {
+        "name": "fry",
+        "productId": "e161"
+      },
+      {
+        "name": "Kajo",
+        "productId": "e162"
+      },
+      {
+        "name": "Carbon",
+        "productId": "e164"
+      },
+      {
+        "name": "turmeric",
+        "productId": "e165"
+      },
+      {
+        "name": "Cardiast",
+        "productId": "e166"
+      },
+      {
+        "name": "Ground coriander",
+        "productId": "e167"
+      },
+      {
+        "name": "Lime",
+        "productId": "e168"
+      },
+      {
+        "name": "Looseous peeled",
+        "productId": "e170"
+      },
+      {
+        "name": "Softel",
+        "productId": "e171"
+      },
+      {
+        "name": "Mahlab",
+        "productId": "e172"
+      },
+      {
+        "name": "Grilled Spices",
+        "productId": "e174"
+      },
+      {
+        "name": "Soft corn starch",
+        "productId": "e176"
+      },
+      {
+        "name": "Soft Anise",
+        "productId": "e180"
+      },
+      {
+        "name": "Anise",
+        "productId": "e181"
+      }
+    ]
+  },
+  {
+    "parent": 2,
+    "children": [
+      {
+        "name": "باذنجان محشي",
+        "productId": "211"
+      },
+      {
+        "name": "بامية مجففة صغير",
+        "productId": "212"
+      },
+      {
+        "name": "بامية مجففة كبير",
+        "productId": "213"
+      },
+      {
+        "name": "فواكه مجففة",
+        "productId": "214"
+      },
+      {
+        "name": "كوسا مجففة للحشي",
+        "productId": "215"
+      },
+      {
+        "name": "ملوخية خشنة صغير",
+        "productId": "216"
+      },
+      {
+        "name": "ملوخية خشنة وسط",
+        "productId": "217"
+      },
+      {
+        "name": "ملوخية خشنة كبير",
+        "productId": "218"
+      },
+      {
+        "name": "ملوخية ناعمة كبير",
+        "productId": "219"
+      },
+      {
+        "name": "Stuffed eggplant",
+        "productId": "e211"
+      },
+      {
+        "name": "Dried Bowas Small",
+        "productId": "e212"
+      },
+      {
+        "name": "Big Dried Bowas",
+        "productId": "e213"
+      },
+      {
+        "name": "Dried fruits",
+        "productId": "e214"
+      },
+      {
+        "name": "Dried zucchini for stuffing",
+        "productId": "e215"
+      },
+      {
+        "name": "Small rough molokhia",
+        "productId": "e216"
+      },
+      {
+        "name": "Mediuem Coarse Molokhia",
+        "productId": "e217"
+      },
+      {
+        "name": "Great Molokhia",
+        "productId": "e218"
+      },
+      {
+        "name": "Great soft molokhia",
+        "productId": "e219"
+      }
+    ]
+  },
+  {
+    "parent": 3,
+    "children": [
+      {
+        "name": "مربى المشمش",
+        "productId": "311"
+      },
+      {
+        "name": "مربى التين",
+        "productId": "312"
+      },
+      {
+        "name": "مربى الكرز",
+        "productId": "313"
+      },
+      {
+        "name": "مربى التوت",
+        "productId": "314"
+      },
+      {
+        "name": "مربى الفراولة",
+        "productId": "315"
+      },
+      {
+        "name": "مربى الورد",
+        "productId": "316"
+      },
+      {
+        "name": "مربى الدبس والطحينة",
+        "productId": "317"
+      },
+      {
+        "name": "مربى مشمش حب",
+        "productId": "318"
+      },
+      {
+        "name": "مربى تين حب",
+        "productId": "319"
+      },
+      {
+        "name": "مربى كباد قطع",
+        "productId": "320"
+      },
+      {
+        "name": "مربى باذنجان حب",
+        "productId": "321"
+      },
+      {
+        "name": "مربى نانرج حب",
+        "productId": "322"
+      },
+      {
+        "name": "مربى يقطين قطع",
+        "productId": "323"
+      },
+      {
+        "name": "مربى فريز حب",
+        "productId": "324"
+      },
+      {
+        "name": "Apricot jam",
+        "productId": "e311"
+      },
+      {
+        "name": "Fig's jam",
+        "productId": "e312"
+      },
+      {
+        "name": "Cherry jam",
+        "productId": "e313"
+      },
+      {
+        "name": "Raspberry jam",
+        "productId": "e314"
+      },
+      {
+        "name": "Strawberry jam",
+        "productId": "e315"
+      },
+      {
+        "name": "Rose jam",
+        "productId": "e316"
+      },
+      {
+        "name": "Dibbed and tahini jam",
+        "productId": "e317"
+      },
+      {
+        "name": "Apricot jam (Pecies)",
+        "productId": "e318"
+      },
+      {
+        "name": "Tin jam (Pecies)",
+        "productId": "e319"
+      },
+      {
+        "name": "Citron jam (Pecies)",
+        "productId": "e320"
+      },
+      {
+        "name": "Eggplant jam (Pecies)",
+        "productId": "e321"
+      },
+      {
+        "name": "Nang jam (Pecies)",
+        "productId": "e322"
+      },
+      {
+        "name": "Quttin jam (Pecies)",
+        "productId": "e323"
+      },
+      {
+        "name": "Strawberries jam (Pecies)",
+        "productId": "e324"
+      }
+    ]
+  },
+  {
+    "parent": 4,
+    "children": [
+      {
+        "name": "زيت زيتون 100ml",
+        "productId": "411"
+      },
+      {
+        "name": "زيت زيتون صغير",
+        "productId": "412"
+      },
+      {
+        "name": "زيت زيتون وسط",
+        "productId": "413"
+      },
+      {
+        "name": "زيت زيتون كبير",
+        "productId": "414"
+      },
+      {
+        "name": "زيت زيتون جرة صغير",
+        "productId": "415"
+      },
+      {
+        "name": "زيت زيتون جرة وسط",
+        "productId": "416"
+      },
+      {
+        "name": "زيت زيتون جرة كبير",
+        "productId": "417"
+      },
+      {
+        "name": "زيت زيتون ( قالب الغوطة )",
+        "productId": "418"
+      },
+      {
+        "name": "زيت زيتون 1 لتر",
+        "productId": "419"
+      },
+      {
+        "name": "زيت زيتون 2 لتر",
+        "productId": "420"
+      },
+      {
+        "name": "زيت زيتون 4 لتر",
+        "productId": "421"
+      },
+      {
+        "name": "زيت زيتون 5 لتر",
+        "productId": "422"
+      },
+      {
+        "name": "زيت زيتون تنك 10 لتر",
+        "productId": "423"
+      },
+      {
+        "name": "Olive Oil 100ml",
+        "productId": "e411"
+      },
+      {
+        "name": "Small Olive Oil ",
+        "productId": "e412"
+      },
+      {
+        "name": "Mediuem Olive Oil ",
+        "productId": "e413"
+      },
+      {
+        "name": "Large Olive Oil ",
+        "productId": "e414"
+      },
+      {
+        "name": "Small Olive Oil (Jar)",
+        "productId": "e415"
+      },
+      {
+        "name": "Mediuem Olive Oil (Jar)",
+        "productId": "e416"
+      },
+      {
+        "name": "Large Olive Oil (Jar)",
+        "productId": "e417"
+      },
+      {
+        "name": "Olive Oil (Algota Template)",
+        "productId": "e418"
+      },
+      {
+        "name": "Olive Oil 1L",
+        "productId": "e419"
+      },
+      {
+        "name": "Olive Oil 2L",
+        "productId": "e420"
+      },
+      {
+        "name": "Olive Oil 4L",
+        "productId": "e421"
+      },
+      {
+        "name": "Olive Oil 5L",
+        "productId": "e422"
+      },
+      {
+        "name": "Olive Oil 10L (Tank)",
+        "productId": "e423"
+      }
+    ]
+  },
+  {
+    "parent": 5,
+    "children": [
+      {
+        "name": "زيتون أخضر سلقيني ",
+        "productId": "511"
+      },
+      {
+        "name": "زيتون أسود سلقيني ",
+        "productId": "514"
+      },
+      {
+        "name": "زيتون أخضر تفاحي زهرة ",
+        "productId": "517"
+      },
+      {
+        "name": "زيتون أسود كلمتا ",
+        "productId": "520"
+      },
+      {
+        "name": "زيتون أخضر كلمتا ",
+        "productId": "523"
+      },
+      {
+        "name": "سلطة زيتون ",
+        "productId": "526"
+      },
+      {
+        "name": "زيتون مشوي ",
+        "productId": "529"
+      },
+      {
+        "name": "زيتون أخضر محشي زعتر ",
+        "productId": "531"
+      },
+      {
+        "name": "زيتون أخضر محشي جزر ",
+        "productId": "534"
+      },
+      {
+        "name": "زيتون أخضر محشي ليمون ",
+        "productId": "537"
+      },
+      {
+        "name": "زيتون أخضر محشي فليفلة ",
+        "productId": "540"
+      },
+      {
+        "name": "زيتون أخضر محشي ثوم ",
+        "productId": "543"
+      },
+      {
+        "name": "زيتون شرائح أسود ",
+        "productId": "546"
+      },
+      {
+        "name": "زيتون شرائح أخضر ",
+        "productId": "549"
+      },
+      {
+        "name": "زيتون أخضر قيسي ( بعشيقة ) ",
+        "productId": "552"
+      },
+      {
+        "name": "زيتون مثقب مع شطة ",
+        "productId": "555"
+      },
+      {
+        "name": "Green Olive (Salkini)",
+        "productId": "e511"
+      },
+      {
+        "name": "Black Olive (Salkini)",
+        "productId": "e514"
+      },
+      {
+        "name": "Green Olive (Extra Toffahii)",
+        "productId": "e517"
+      },
+      {
+        "name": "Black Olive (Kalamta)",
+        "productId": "e520"
+      },
+      {
+        "name": "Green Olive (Kalamta)",
+        "productId": "e523"
+      },
+      {
+        "name": "Olive Salad",
+        "productId": "e526"
+      },
+      {
+        "name": "Grilled Olive ",
+        "productId": "e529"
+      },
+      {
+        "name": "Stuffed Olive with Thyme",
+        "productId": "e531"
+      },
+      {
+        "name": "Stuffed Olive with Carrots",
+        "productId": "e534"
+      },
+      {
+        "name": "Stuffed Olive with Lemon",
+        "productId": "e537"
+      },
+      {
+        "name": "Stuffed Olive with Papper",
+        "productId": "e540"
+      },
+      {
+        "name": "Stuffed Olive with Garlic",
+        "productId": "e543"
+      },
+      {
+        "name": "Black Olive (Sliced)",
+        "productId": "e546"
+      },
+      {
+        "name": "Green Olive (Sliced)",
+        "productId": "e549"
+      },
+      {
+        "name": "Green Olive (Kaisi)",
+        "productId": "e552"
+      },
+      {
+        "name": "Pitted Olive with Hot Sauce",
+        "productId": "e557"
+      }
+    ]
+  },
+  {
+    "parent": 6,
+    "children": [
+      {
+        "name": "زعتر أحمر أكسترا",
+        "productId": "611"
+      },
+      {
+        "name": "الزعتر الملوكي الأحمر",
+        "productId": "612"
+      },
+      {
+        "name": "الزعتر الأحمر",
+        "productId": "613"
+      },
+      {
+        "name": "زعتر أحمر ظرف ( معلق )",
+        "productId": "614"
+      },
+      {
+        "name": "زعتر أحمر ملوكي ( بلاستيك )",
+        "productId": "615"
+      },
+      {
+        "name": "خلطة الزعتر الأردني",
+        "productId": "616"
+      },
+      {
+        "name": "زعتر أخضر أكسترا",
+        "productId": "617"
+      },
+      {
+        "name": "الزعتر الملوكي الأخضر",
+        "productId": "618"
+      },
+      {
+        "name": "الزعتر الأخضر",
+        "productId": "619"
+      },
+      {
+        "name": "زعتر أخضر ظرف ( معلق )",
+        "productId": "620"
+      },
+      {
+        "name": "زعتر أخضر ملوكي ( بلاستيك )",
+        "productId": "621"
+      },
+      {
+        "name": "خلطة الزعتر الفلسطيني",
+        "productId": "622"
+      },
+      {
+        "name": "Red Thyme Extra",
+        "productId": "e611"
+      },
+      {
+        "name": "Red Royal Thyme",
+        "productId": "e612"
+      },
+      {
+        "name": "Red Thyme",
+        "productId": "e613"
+      },
+      {
+        "name": "Red Thyme (Hanging Envelope)",
+        "productId": "e614"
+      },
+      {
+        "name": "Red Royal Thyme (Plastic)",
+        "productId": "e615"
+      },
+      {
+        "name": "Jordanian Thyme Mixture",
+        "productId": "e616"
+      },
+      {
+        "name": "Green Thyme Extra",
+        "productId": "e617"
+      },
+      {
+        "name": "Green Royal Thyme",
+        "productId": "e618"
+      },
+      {
+        "name": "Green Thyme",
+        "productId": "e619"
+      },
+      {
+        "name": "Green Thyme (Hanging Envelope)",
+        "productId": "e620"
+      },
+      {
+        "name": "Green Royal Thyme (Plastic)",
+        "productId": "e621"
+      },
+      {
+        "name": "Palestinian Thyme Mixture",
+        "productId": "e622"
+      }
+    ]
+  },
+  {
+    "parent": 7,
+    "children": [
+      {
+        "name": "بازلاء",
+        "productId": "711"
+      },
+      {
+        "name": "ذرة",
+        "productId": "713"
+      },
+      {
+        "name": "فطر شرائح",
+        "productId": "715"
+      },
+      {
+        "name": "فول بالخلطة الشامية",
+        "productId": "716"
+      },
+      {
+        "name": "فول سادة",
+        "productId": "617"
+      },
+      {
+        "name": "فول أخضر",
+        "productId": "719"
+      },
+      {
+        "name": "كمأة سمرا ( فقع )",
+        "productId": "720"
+      },
+      {
+        "name": "متبل",
+        "productId": "721"
+      },
+      {
+        "name": "مسبحة",
+        "productId": "722"
+      },
+      {
+        "name": "مسقعة باذنجان",
+        "productId": "723"
+      },
+      {
+        "name": "يالنجي صغير",
+        "productId": "724"
+      },
+      {
+        "name": "يالنجي كبير",
+        "productId": "725"
+      },
+      {
+        "name": "Peas",
+        "productId": "e711"
+      },
+      {
+        "name": "Corn",
+        "productId": "e713"
+      },
+      {
+        "name": "Sliced ​​Mushrooms",
+        "productId": "e715"
+      },
+      {
+        "name": "Bean with the Levantine mix",
+        "productId": "e716"
+      },
+      {
+        "name": "Fava Bean",
+        "productId": "e717"
+      },
+      {
+        "name": "Green beans",
+        "productId": "e719"
+      },
+      {
+        "name": "Brunette Truffles",
+        "productId": "e720"
+      },
+      {
+        "name": "Eggplant Dip with Tahini",
+        "productId": "e721"
+      },
+      {
+        "name": "Mosabbaha",
+        "productId": "e722"
+      },
+      {
+        "name": "Moussaka",
+        "productId": "e723"
+      },
+      {
+        "name": "Canned Yalangi",
+        "productId": "e724"
+      }
+    ]
+  },
+  {
+    "parent": 8,
+    "children": [
+      {
+        "name": "زهورات طبيعية",
+        "productId": "811"
+      },
+      {
+        "name": "مليسة",
+        "productId": "812"
+      },
+      {
+        "name": "زعتر بري",
+        "productId": "813"
+      },
+      {
+        "name": "عشرق",
+        "productId": "814"
+      },
+      {
+        "name": "ميرمية",
+        "productId": "815"
+      },
+      {
+        "name": "ورق غار",
+        "productId": "816"
+      },
+      {
+        "name": "كركديه",
+        "productId": "817"
+      },
+      {
+        "name": "زهرة البابونج",
+        "productId": "818"
+      },
+      {
+        "name": "Mixed Flower",
+        "productId": "e811"
+      },
+      {
+        "name": "Lemon Verbena",
+        "productId": "e812"
+      },
+      {
+        "name": "Wild Thyme",
+        "productId": "e814"
+      },
+      {
+        "name": "Senna Pods",
+        "productId": "e815"
+      },
+      {
+        "name": "Saga Leaves",
+        "productId": "e816"
+      },
+      {
+        "name": "Bay Leaves",
+        "productId": "e817"
+      },
+      {
+        "name": "Hibiscus",
+        "productId": "e818"
+      },
+      {
+        "name": "Chamomile Flower",
+        "productId": "e819"
+      }
+    ]
+  },
+  {
+    "parent": 9,
+    "children": [
+      {
+        "name": "خلطة الفلافل ",
+        "productId": "911"
+      },
+      {
+        "name": "خلطة الكبة النية",
+        "productId": "914"
+      },
+      {
+        "name": "مجروش الكعك",
+        "productId": "915"
+      },
+      {
+        "name": "مجروش الكعك للقلي",
+        "productId": "916"
+      },
+      {
+        "name": "Falafel Mixture",
+        "productId": "e911"
+      },
+      {
+        "name": "Kubba Naieh Mixture",
+        "productId": "e914"
+      },
+      {
+        "name": "Fried Mixture",
+        "productId": "e915"
+      },
+      {
+        "name": "Fried Mixture for Frying",
+        "productId": "e916"
+      }
+    ]
+  },
+  {
+    "parent": 10,
+    "children": [
+      {
+        "name": "شراب التوت الشامي المركز",
+        "productId": "1011"
+      },
+      {
+        "name": "شراب الجلاب المركز",
+        "productId": "1012"
+      },
+      {
+        "name": "عرق سوس بلدي",
+        "productId": "1013"
+      },
+      {
+        "name": "عرق سوس سريع التحضير",
+        "productId": "1015"
+      },
+      {
+        "name": "قمر الدين ( سلفان )",
+        "productId": "1017"
+      },
+      {
+        "name": "Concentrated Shami berries syrup",
+        "productId": "e1011"
+      },
+      {
+        "name": "Concentrated Julep syrup",
+        "productId": "e1012"
+      },
+      {
+        "name": "Licorice Baladi",
+        "productId": "e1013"
+      },
+      {
+        "name": "Licorice (Fast Preparation)",
+        "productId": "e1015"
+      },
+      {
+        "name": "Dried Apricot Paste (Silvan)",
+        "productId": "e1017"
+      }
+    ]
+  },
+  {
+    "parent": 11,
+    "children": [
+      {
+        "name": "حمض الحصرم",
+        "productId": "1111"
+      },
+      {
+        "name": "خل أبيض",
+        "productId": "1112"
+      },
+      {
+        "name": "ماء زهر",
+        "productId": "1114"
+      },
+      {
+        "name": "ماء الورد",
+        "productId": "1116"
+      },
+      {
+        "name": "خل التفاح",
+        "productId": "1118"
+      },
+      {
+        "name": "خل عنب",
+        "productId": "1120"
+      },
+      {
+        "name": "بديل الليمون",
+        "productId": "1127"
+      },
+      {
+        "name": "Grape Verjuice",
+        "productId": "e1111"
+      },
+      {
+        "name": "Flower Water",
+        "productId": "e1114"
+      },
+      {
+        "name": "Rose Water",
+        "productId": "e1116"
+      },
+      {
+        "name": "Apple Vinegar",
+        "productId": "e1118"
+      },
+      {
+        "name": "Grape Vinegar",
+        "productId": "e1121"
+      },
+      {
+        "name": "White Vinegar",
+        "productId": "e1126"
+      }
+    ]
+  },
+  {
+    "parent": 12,
+    "children": [
+      {
+        "name": "برازق",
+        "productId": "1211"
+      },
+      {
+        "name": "عجوة ناعمة فاخرة",
+        "productId": "1212"
+      },
+      {
+        "name": "كعك شامي سادة",
+        "productId": "1213"
+      },
+      {
+        "name": "كعك شامي بالسمسم",
+        "productId": "1214"
+      },
+      {
+        "name": "كعك شامي مالح",
+        "productId": "1215"
+      },
+      {
+        "name": "كعك شامي باليانسون",
+        "productId": "1216"
+      },
+      {
+        "name": "كعك شامي بالزعتر",
+        "productId": "1217"
+      },
+      {
+        "name": "كعك شامي بحبة البركة",
+        "productId": "1218"
+      },
+      {
+        "name": "كعك بلحة سادة",
+        "productId": "1219"
+      },
+      {
+        "name": "كعك بلحة بالسمسم",
+        "productId": "1220"
+      },
+      {
+        "name": "كعك بلحة بحبة البركة",
+        "productId": "1221"
+      },
+      {
+        "name": "كعك بلحة باليانسون",
+        "productId": "1222"
+      },
+      {
+        "name": "Brazek",
+        "productId": "e1211"
+      },
+      {
+        "name": "Soft, luxurious Ajwa",
+        "productId": "e1212"
+      },
+      {
+        "name": "Shami cakes",
+        "productId": "e1213"
+      },
+      {
+        "name": "Shami cakes with sesame",
+        "productId": "e1214"
+      },
+      {
+        "name": "Shami Cake with anise",
+        "productId": "e1216"
+      },
+      {
+        "name": "Shami cakes with thyme",
+        "productId": "e1217"
+      },
+      {
+        "name": "Shami cakes with black seed",
+        "productId": "e1218"
+      },
+      {
+        "name": "Plain date Cakes",
+        "productId": "e1219"
+      },
+      {
+        "name": "Sesame date Cakes",
+        "productId": "e1220"
+      },
+      {
+        "name": "Date Cake with black seed",
+        "productId": "e1221"
+      },
+      {
+        "name": "Date Cake with anise",
+        "productId": "e1222"
+      }
+    ]
+  },
+  {
+    "parent": 13,
+    "children": [
+      {
+        "name": "مخلل خيار",
+        "productId": "1311"
+      },
+      {
+        "name": "مخلل قثاء",
+        "productId": "1314"
+      },
+      {
+        "name": "مخلل فليفلة حورانية",
+        "productId": "1317"
+      },
+      {
+        "name": "مخلل فليفلة يونانية",
+        "productId": "1320"
+      },
+      {
+        "name": "مخلل خضار مشكلة",
+        "productId": "1323"
+      },
+      {
+        "name": "مخلل لفت مكعبات",
+        "productId": "1326"
+      },
+      {
+        "name": "مخلل ثوم",
+        "productId": "1329"
+      },
+      {
+        "name": "عنبة باردة",
+        "productId": "1330"
+      },
+      {
+        "name": "عنبة حارة",
+        "productId": "1333"
+      },
+      {
+        "name": "طرشي الموصل",
+        "productId": "1336"
+      },
+      {
+        "name": "طرشي مدبس",
+        "productId": "1339"
+      },
+      {
+        "name": "طرشي مقطع بخل التمر",
+        "productId": "1342"
+      },
+      {
+        "name": "طرشي كردي بالشوندر",
+        "productId": "1345"
+      },
+      {
+        "name": "Pickled Cucnmbers",
+        "productId": "e1311"
+      },
+      {
+        "name": "Wild Cucnmbers Pickles",
+        "productId": "e1314"
+      },
+      {
+        "name": "Papper Pickles",
+        "productId": "e1317"
+      },
+      {
+        "name": "Papper Pickles (Greek)",
+        "productId": "e1320"
+      },
+      {
+        "name": "Mixed Vegetables Pickles",
+        "productId": "e1323"
+      },
+      {
+        "name": "Turnip Pickles",
+        "productId": "e1326"
+      },
+      {
+        "name": "Pickled Garlic",
+        "productId": "e1329"
+      },
+      {
+        "name": "Anba Pickles",
+        "productId": "e1330"
+      },
+      {
+        "name": "Anba Pickles (Hot)",
+        "productId": "e1333"
+      },
+      {
+        "name": "Musel Pickles",
+        "productId": "e1336"
+      },
+      {
+        "name": "(Molasses) Al-Najaf Pickles",
+        "productId": "e1339"
+      },
+      {
+        "name": "(Vinegar) Al-Najaf Pickles",
+        "productId": "e1342"
+      },
+      {
+        "name": "Kurdistan Pickles",
+        "productId": "e1345"
+      }
+    ]
+  },
+  {
+    "parent": 14,
+    "children": [
+      {
+        "name": "جيليه فريز",
+        "productId": "1411"
+      },
+      {
+        "name": "جيليه كرز",
+        "productId": "1412"
+      },
+      {
+        "name": "جيليه موز",
+        "productId": "1413"
+      },
+      {
+        "name": "خلطة البشاميل",
+        "productId": "1417"
+      },
+      {
+        "name": "سحلب بجوز الهند",
+        "productId": "1418"
+      },
+      {
+        "name": "سحلب بالقرفة",
+        "productId": "1419"
+      },
+      {
+        "name": "سحلب بماءالزهر",
+        "productId": "1420"
+      },
+      {
+        "name": "سحلب بالفانيليا",
+        "productId": "1421"
+      },
+      {
+        "name": "شوفان",
+        "productId": "1422"
+      },
+      {
+        "name": "كاسترد",
+        "productId": "1423"
+      },
+      {
+        "name": "كريم شانتيه شوكولا",
+        "productId": "1425"
+      },
+      {
+        "name": "كريم شانتيه فانيليا",
+        "productId": "1426"
+      },
+      {
+        "name": "كريم كراميل",
+        "productId": "1427"
+      },
+      {
+        "name": "مسحوق الكاكاو",
+        "productId": "1429"
+      },
+      {
+        "name": "نشاء الذرة الناعم",
+        "productId": "1430"
+      },
+      {
+        "name": "نشاء حب الضرس",
+        "productId": "1431"
+      },
+      {
+        "name": "Strawberries Jelly",
+        "productId": "e1411"
+      },
+      {
+        "name": "Cherries Jelly",
+        "productId": "e1412"
+      },
+      {
+        "name": "Banana Jelly",
+        "productId": "e1413"
+      },
+      {
+        "name": "Bechamel mixture",
+        "productId": "e1417"
+      },
+      {
+        "name": "Orchid Coconur",
+        "productId": "e1418"
+      },
+      {
+        "name": "Orchid Cinamon",
+        "productId": "e1419"
+      },
+      {
+        "name": "Orchid Flower water",
+        "productId": "e1420"
+      },
+      {
+        "name": "Orchid Vanilla",
+        "productId": "e1421"
+      },
+      {
+        "name": "Oats",
+        "productId": "e1422"
+      },
+      {
+        "name": "Custard Poweder",
+        "productId": "e1423"
+      },
+      {
+        "name": "Chante Chocolate",
+        "productId": "e1425"
+      },
+      {
+        "name": "Chante Vanilla",
+        "productId": "e1426"
+      },
+      {
+        "name": "Creme Caramel",
+        "productId": "e1427"
+      },
+      {
+        "name": "Cacoa",
+        "productId": "e1429"
+      },
+      {
+        "name": "Soft corn starch",
+        "productId": "e1430"
+      },
+      {
+        "name": "Starch 'Grain'",
+        "productId": "e1431"
+      }
+    ]
+  },
+  {
+    "parent": 15,
+    "children": [
+      {
+        "name": "معجون الطماطم",
+        "productId": "1511"
+      },
+      {
+        "name": "كتشب حار",
+        "productId": "1517"
+      },
+      {
+        "name": "كتشب حلو",
+        "productId": "1519"
+      },
+      {
+        "name": "صلصة فليفلة حارة ",
+        "productId": "1523"
+      },
+      {
+        "name": "Tomato paste",
+        "productId": "e1511"
+      },
+      {
+        "name": "Hot Ketchup",
+        "productId": "e1517"
+      },
+      {
+        "name": "Ketchup",
+        "productId": "e1519"
+      },
+      {
+        "name": "Hot Sauce (Plastic)",
+        "productId": "e1523"
+      }
+    ]
+  },
+  {
+    "parent": 16,
+    "children": [
+      {
+        "name": "صلصة الباربكيو",
+        "productId": "1611"
+      },
+      {
+        "name": "صلصة العنبة الباردة",
+        "productId": "1612"
+      },
+      {
+        "name": "صلصة العنبة الحارة",
+        "productId": "1613"
+      },
+      {
+        "name": "Barbecue Sauce",
+        "productId": "e1611"
+      },
+      {
+        "name": "Cold Grape Sauce",
+        "productId": "e1612"
+      },
+      {
+        "name": "Hot Grape Sauce",
+        "productId": "e1613"
+      }
+    ]
+  },
+  {
+    "parent": 17,
+    "children": [
+      {
+        "name": "جريش عراقي",
+        "productId": "1711"
+      },
+      {
+        "name": "فريكة بلدية",
+        "productId": "1712"
+      },
+      {
+        "name": "فول عريض ( باجيلا )",
+        "productId": "1714"
+      },
+      {
+        "name": "كشك بلدي",
+        "productId": "1716"
+      },
+      {
+        "name": "عدس مجروش أحمر",
+        "productId": "1718"
+      },
+      {
+        "name": "Iraq Jareesh",
+        "productId": "e1711"
+      },
+      {
+        "name": "Freekeh",
+        "productId": "e1712"
+      },
+      {
+        "name": "Broad Beans",
+        "productId": "e1714"
+      },
+      {
+        "name": "Original Kishk",
+        "productId": "e1716"
+      },
+      {
+        "name": "Crushed red lentils",
+        "productId": "e1718"
+      }
+    ]
+  },
+  {
+    "parent": 18,
+    "children": [
+      {
+        "name": "باذنجان مشوي",
+        "productId": "1811"
+      },
+      {
+        "name": "طماطم مقشرة",
+        "productId": "1812"
+      },
+      {
+        "name": "فطر مقطع",
+        "productId": "1813"
+      },
+      {
+        "name": "فليفلة مطحونة",
+        "productId": "1814"
+      },
+      {
+        "name": "دبس فليفلة حارة",
+        "productId": "1815"
+      },
+      {
+        "name": "كمأة سمراء ( فقع )",
+        "productId": "1816"
+      },
+      {
+        "name": "Grilled Eggplant",
+        "productId": "e1811"
+      },
+      {
+        "name": "Peeled tomatoes",
+        "productId": "e1812"
+      },
+      {
+        "name": "Sliced mushroom",
+        "productId": "e1813"
+      },
+      {
+        "name": "Ground pepper",
+        "productId": "e1814"
+      },
+      {
+        "name": "Hot pepper",
+        "productId": "e1815"
+      },
+      {
+        "name": "Brunette Truffles",
+        "productId": "e1816"
+      }
+    ]
+  },
+  {
+    "parent": 19,
+    "children": [
+      {
+        "name": "حلاوة بالفستق",
+        "productId": "1911"
+      },
+      {
+        "name": "حلاوة سادة",
+        "productId": "1914"
+      },
+      {
+        "name": "طحينة",
+        "productId": "1917"
+      },
+      {
+        "name": "Halva with Pistachio",
+        "productId": "e1911"
+      },
+      {
+        "name": "Halva",
+        "productId": "e1914"
+      },
+      {
+        "name": "Tahini",
+        "productId": "1816"
+      }
+    ]
+  },
+  {
+    "parent": 20,
+    "children": [
+      {
+        "name": "دبس تمر",
+        "productId": "2011"
+      },
+      {
+        "name": "دبس عنب",
+        "productId": "2014"
+      },
+      {
+        "name": "دبس رمان ",
+        "productId": "2017"
+      },
+      {
+        "name": "Date Molasses",
+        "productId": "e2011"
+      },
+      {
+        "name": "Grapes Molasses",
+        "productId": "e2014"
+      },
+      {
+        "name": "Pomegranate Molasses",
+        "productId": "e2017"
+      }
+    ]
+  },
+  {
+    "parent": 21,
+    "children": [
+      {
+        "name": "مكدوس باذنجان",
+        "productId": "2111"
+      },
+      {
+        "name": "Makdous",
+        "productId": "e2111"
+      }
+    ]
+  }
+]

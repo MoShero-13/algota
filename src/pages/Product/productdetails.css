@@ -1,0 +1,153 @@
+/* -------------------------------------------------------------------------- */
+/*                            ٍStart ProductDetails                            */
+/* -------------------------------------------------------------------------- */
+.body-product {
+  background-color: #193f2b;
+  background-image: url(../../assest/image/about/تلة.png);
+  background-size: 100%;
+  .sec-01 {
+    position: relative;
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 6%;
+    color: #fff;
+    .content {
+      position: relative;
+      margin-top: 90px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content .image {
+      position: relative;
+      width: 750px;
+      height: 450px;
+      overflow: hidden;
+      box-shadow: 0px 10px 140px #000;
+    }
+
+    .content .image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .content .text-box {
+      direction: rtl;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      padding: 40px;
+      max-width: 400px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      transform: translate(-80px, 50px);
+      box-shadow: 0px 10px 140px #000;
+    }
+
+    .text-box1 {
+      direction: rtl;
+      background: rgba(255, 255, 255, 0.1);
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      padding: 40px;
+      max-width: 400px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      transform: translate(50px, 50px);
+      box-shadow: 0px 10px 140px #000;
+      z-index: 1;
+    }
+
+    .content .text-box h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: var(--hover-color);
+    }
+    .content .text-box p {
+      color: var(--hover-color);
+      font-size: 20px;
+    }
+    .content .text-box1 h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: var(--hover-color);
+    }
+    .content .text-box1 p {
+      color: var(--hover-color);
+      font-size: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .content .image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+      .content .text-box {
+        direction: rtl;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        max-width: 400px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        transform: translate(-35px, 25px);
+      }
+      .news {
+        padding-top: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 20px;
+      }
+      .content {
+        display: block;
+      }
+      .content .text-box {
+        direction: rtl;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        max-width: 400px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        transform: translate(0, 0);
+      }
+      .content .text-box h1 {
+        text-align: center;
+      }
+      .content .text-box p {
+        text-align: center;
+      }
+      .content .image {
+        width: 100%;
+      }
+    }
+  }
+}
+.footer {
+  background: var(--hover-color);
+  color: #333;
+}
+.footer a {
+  color: #333;
+}
+.footer a:hover {
+  color: var(--main-color);
+}
+.footer p .name-1 {
+  color: var(--main-color);
+}

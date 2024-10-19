@@ -1,0 +1,199 @@
+/* -------------------------------------------------------------------------- */
+/*                                  About Us                                  */
+/* -------------------------------------------------------------------------- */
+.about-container {
+  padding-top: 30px;
+  background-color: #193f2b;
+  background-image: url(../../assest/image/about/تلة.png);
+  background-size: 100%;
+}
+.about-nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 7px;
+  width: 36%;
+  height: 40px;
+  margin-left: 32%;
+  margin-right: 32%;
+  text-align: center;
+  background-image: url("../../assest/image/img.png");
+  background-size: cover;
+  border-radius: 0 0 15px 15px;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .about-nav {
+    width: 80%;
+    margin: 0 10% 0 10%;
+  }
+}
+.about-nav a {
+  color: var(--second-color);
+  font-size: 18px;
+}
+.about-nav a:hover {
+  color: var(--hover-color);
+}
+.about-landing {
+  width: 95%;
+  height: 550px;
+  margin: auto;
+  border-radius: 24px;
+  box-shadow: 0px 10px 140px #000;
+}
+.about-landing .text {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  margin-top: 30px;
+  height: 550px;
+  z-index: 10;
+}
+.about-landing .text .text1 {
+  position: absolute;
+  width: 400px;
+  bottom: 110px;
+  font-size: 2.5em;
+  color: #d92026;
+}
+.about-landing .text .text2 {
+  position: absolute;
+  font-size: 2em;
+  color: #6db347;
+  bottom: 50px;
+  width: 400px;
+}
+@media (max-width: 500px) {
+  .about-landing .text .text1 {
+    width: 320px;
+    font-size: 2em;
+  }
+  .about-landing .text .text2 {
+    width: 320px;
+    font-size: 1.5em;
+  }
+}
+.about-overlay {
+  background-image: linear-gradient(to bottom, #ffffff00, #000000);
+  position: absolute;
+  top: 0;
+  width: 95%;
+  height: 550px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 24px;
+  z-index: 5;
+}
+.about-landing video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.about-logo {
+  position: relative;
+  top: -70px;
+  margin: auto;
+  width: 150px;
+}
+
+.about-logo img {
+  position: relative;
+  width: 150px;
+  z-index: 100;
+}
+.about-sec-01 {
+  position: relative;
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.about-content {
+  position: relative;
+  margin-top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-content .image {
+  position: relative;
+  width: 750px;
+  height: 450px;
+  overflow: hidden;
+  box-shadow: 0px 10px 140px #000;
+}
+
+.about-content .image video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.about-text-box {
+  position: relative;
+  top: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transform: translate(-80px, 50px);
+  box-shadow: 0px 10px 140px #000;
+}
+.about-text-box h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: var(--hover-color);
+}
+.about-text-box p {
+  color: var(--hover-color);
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .about-content {
+    display: block;
+  }
+  .about-content .container {
+    width: 90%;
+  }
+  .about-content .image {
+    width: 100%;
+  }
+  .about-text-box {
+    top: -100px;
+    transform: translateX(0);
+  }
+}
+.about-footer-h1 {
+  color: #fff;
+  text-shadow: 0 0 0;
+}
+.footer-about {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.footer-about2 {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: #fff;
+}
+.footer-about2 a {
+  color: #fff;
+}
+.footer-about2 a:hover {
+  color: rgb(63, 219, 137);
+}
+.footer-about2 .footer-3 p .name-1 {
+  color: rgb(63, 219, 137);
+}

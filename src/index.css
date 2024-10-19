@@ -1,0 +1,178 @@
+@import url("https://www.fontstatic.com/f=cocon-next-arabic");
+/* -------------------------------------------------------------------------- */
+/*                               Start Variables                              */
+/* -------------------------------------------------------------------------- */
+:root {
+  --main-color: #007236;
+  --second-color: white;
+  --hover-color: #ddffbb;
+  --main-font: "cocon-next-arabic", sans-serif;
+  --second-font: "Amiri", sans-serif;
+  --Third-font: "Lemonada", sans-serif;
+  --main-transition: 0.3s;
+  --main-padding-top: 40px;
+  --main-padding-bottom: 100px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             Start Global rules                             */
+/* -------------------------------------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px var(--main-color);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 2px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+  scroll-behavior: smooth;
+  scrollbar-color: var(--main-color);
+}
+
+.p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--hover-color);
+}
+.p img {
+  width: 200px;
+  height: 170px;
+  margin-bottom: 100px;
+}
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  transition: 0.3s;
+  z-index: 100;
+}
+.whatsapp-icon {
+  margin-top: 16px;
+}
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  z-index: 99;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  color: var(--main-color);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.scrollToTop:hover {
+  opacity: 0.7;
+}
+ul {
+  list-style: none;
+  margin: 10px 0px 0px 10px;
+}
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  opacity: 0.9;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* -------------------------------------------------------------------------- */
+/*                                Small Screen                                */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  .container {
+    width: 735px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Meduim Screen                               */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                                Large Screen                                */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                              Start Components                              */
+/* -------------------------------------------------------------------------- */
+.main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #333;
+  bottom: -30px;
+  width: 120px;
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  bottom: -38px;
+  background-color: white;
+}
+.main-heading p {
+  width: 550px;
+  margin: 0 auto 100px;
+  max-width: 100%;
+  line-height: 2;
+  color: #777;
+}

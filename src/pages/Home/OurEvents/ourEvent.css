@@ -1,0 +1,180 @@
+/* -------------------------------------------------------------------------- */
+/*                                  Our Event                                  */
+/* -------------------------------------------------------------------------- */
+.event-news {
+  padding-top: 90px;
+  background-image: url("../../../assest/image/about/تلة1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.event-news h1 {
+  text-align: center;
+  font-size: 50px;
+  color: var(--main-color);
+  text-shadow: 7px 8px 15px;
+  opacity: 0.7;
+}
+.event-container {
+  width: 80%;
+  margin: 80px auto 0;
+  display: flex;
+}
+.event-image {
+  width: 65%;
+  max-height: 550px;
+}
+.event-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+.event-content1 {
+  width: 500px;
+  height: 100%;
+  padding: 30px;
+  background: #00723541;
+  backdrop-filter: blur(20px);
+  transform: translate(30px, 200px);
+  border-radius: 24px;
+  box-shadow: 0px 10px 140px #828181;
+}
+.event-content2 {
+  display: none;
+  width: 500px;
+  height: 100%;
+  padding: 30px;
+  background: #00723541;
+  backdrop-filter: blur(20px);
+  transform: translate(30px, 200px);
+  border-radius: 24px;
+  box-shadow: 0px 10px 140px #828181;
+}
+.event-content1 .header {
+  display: flex;
+}
+.event-content2 .header {
+  display: flex;
+}
+.event-content1 h2 {
+  text-align: center;
+  color: var(--main-color);
+}
+.event-content2 h2 {
+  text-align: center;
+  color: var(--main-color);
+}
+.event-content1 .info {
+  display: flex;
+  justify-content: space-around;
+}
+.event-content2 .info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.event-content1 .text-content {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.event-content2 .text-content {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.event-news .back-image {
+  position: relative;
+  width: 100%;
+  opacity: 0.4;
+  z-index: -5;
+}
+.event-swiper {
+  height: 800px;
+}
+@media (max-width: 1024px) {
+  .event-image {
+    width: 90%;
+  }
+}
+@media (max-width: 868px) {
+  .event-swiper {
+    height: 1000px;
+  }
+  .event-container {
+    display: block;
+    width: 90%;
+  }
+  .event-image {
+    width: 100%;
+  }
+  .event-content1 {
+    display: none;
+  }
+  .event-content2 {
+    display: block;
+    margin: auto;
+    transform: translate(0, -20px);
+  }
+  .event-content2 {
+    margin: auto;
+    transform: translate(0, -20px);
+  }
+}
+@media (max-width: 600px) {
+  .event-swiper {
+    height: 900px;
+  }
+  .event-content1 {
+    max-width: 350px;
+  }
+  .event-content2 {
+    max-width: 350px;
+  }
+}
+@media (max-width: 400px) {
+  .event-content1 {
+    max-width: 250px;
+  }
+  .event-content2 {
+    max-width: 250px;
+  }
+  .event-content1 h2 {
+    font-size: 20px;
+  }
+  .event-content2 h2 {
+    font-size: 20px;
+  }
+  .event-content1 .info {
+    display: block;
+  }
+  .event-content2 .info {
+    display: block;
+  }
+}
+.event-navigation {
+  width: 95%;
+  margin: auto;
+  position: relative;
+  top: -475px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+.nextBtn1,
+.prevBtn1 {
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .event-navigation {
+    width: 95%;
+    top: -380px;
+  }
+}
+@media (max-width: 500px) {
+  .event-navigation {
+    width: 100%;
+    top: -450px;
+  }
+}
