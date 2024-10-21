@@ -17,7 +17,7 @@ const Landing = ({ slides }) => {
             disableOnInteraction: false,
           }}
           navigation={true}
-          modules={[Navigation, Autoplay]}
+          modules={[Navigation]}
           className="mySwiper"
         >
           {slides.map((slide) => (

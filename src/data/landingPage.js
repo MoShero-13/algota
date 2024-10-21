@@ -8,6 +8,7 @@ import img7 from "../assest/image/img-landing/7.jpg";
 import img8 from "../assest/image/img-landing/8.png";
 import img9 from "../assest/image/img-landing/9.jpg";
 import img10 from "../assest/image/img-landing/10.jpg";
+import img11 from "../assest/image/img-landing/11.jpg";
 const LandingPage = [
   {
     image: img1,
@@ -38,6 +39,9 @@ const LandingPage = [
   },
   {
     image: img10,
+  },
+  {
+    image: img11,
   },
 ];
 export default LandingPage;
