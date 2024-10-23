@@ -11,13 +11,16 @@ import "./aboutUs.css";
 
 const AboutUs = () => {
   /* -------------------------------------------------------------------------- */
+  /*                                 Translation                                */
+  /* -------------------------------------------------------------------------- */
+  const [t, i18n] = useTranslation();
+  /* -------------------------------------------------------------------------- */
   /*                                   Contact                                  */
   /* -------------------------------------------------------------------------- */
   const [setResult] = React.useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
     const formData = new FormData(event.target);
 
     formData.append("access_key", "d9c51755-d940-4805-91a1-da1bb3659d81");
@@ -29,23 +32,34 @@ const AboutUs = () => {
 
     const data = await response.json();
 
-    if (data.success) {
+    if (data.success && i18n.language === "en") {
       Swal.fire({
         title: "Done!",
         text: "Your message has been sended",
         icon: "success",
       });
-      setResult("Form Submitted Successfully");
+      // setResult("Form Submitted Successfully");
       event.target.reset();
     } else {
       console.log("Error", data);
-      setResult(data.message);
+      // setResult(data.message);
+    }
+    if (data.success && i18n.language === "ar") {
+      Swal.fire({
+        title: "تم الإرسال",
+        text: "لقد تم إرسال رسالتك بنجاح",
+        icon: "success",
+      });
+      // setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      // setResult(data.message);
     }
   };
   /* -------------------------------------------------------------------------- */
-  /*                                 Translation                                */
+  /*                                    Title                                   */
   /* -------------------------------------------------------------------------- */
-  const [t, i18n] = useTranslation();
   TabTitle(t("about"));
   return (
     <>
