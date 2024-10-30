@@ -13,7 +13,11 @@ const OurNews = ({ ours }) => {
   const [t, i18n] = useTranslation();
   return (
     <div className="news" id="our-news" dir="rtl">
-      <img src="/image/about/تلة.png" alt="" className="back-image1" />
+      <img
+        src={require("../../../assest/image/about/تلة.png")}
+        alt=""
+        className="back-image1"
+      />
       <motion.h1
         initial={{ opacity: 0, x: 50 }}
         whileInView={{
