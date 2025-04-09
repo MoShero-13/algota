@@ -1,5 +1,11 @@
+import Landing1 from "./Landing";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <>
+      <Landing1 />
+    </>
+  );
 };
 
 export default HomePage;
