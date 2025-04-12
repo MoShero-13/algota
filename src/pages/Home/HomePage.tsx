@@ -3,6 +3,7 @@ import AboutUs from "./AboutUs";
 import Products from "./Products";
 import Places from "./Places";
 import Events from "./Events";
+import News from "./News";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Products />
       <Places />
       <Events />
+      <News />
     </>
   );
 };
