@@ -2,6 +2,7 @@ import Landing1 from "./Landing";
 import AboutUs from "./AboutUs";
 import Products from "./Products";
 import Places from "./Places";
+import Events from "./Events";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <AboutUs />
       <Products />
       <Places />
+      <Events />
     </>
   );
 };
