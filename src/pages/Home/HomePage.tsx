@@ -4,7 +4,6 @@ import Products from "./Products";
 import Places from "./Places";
 import Events from "./Events";
 import News from "./News";
-import EndFooter from "./EndFooter";
 import Footer from "./Footer";
 
 const HomePage = () => {

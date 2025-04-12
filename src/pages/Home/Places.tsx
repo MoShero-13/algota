@@ -41,7 +41,7 @@ import flage39 from "../../assets/flags/Syria.webp";
 import flage40 from "../../assets/flags/Qatar.webp";
 import flage41 from "../../assets/flags/Lebanon.webp";
 import flage42 from "../../assets/flags/Belgium.webp";
-import { Place } from "@mui/icons-material";
+
 // Create a custom marker icon
 const customMarkerIcon = new L.Icon({
   iconUrl: `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
