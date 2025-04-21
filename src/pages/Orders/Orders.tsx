@@ -6,8 +6,6 @@ import {
   TextField,
   Button,
   Modal,
-  List,
-  ListItem,
   ListItemText,
   IconButton,
   styled,
@@ -30,7 +28,7 @@ import {
   Fade,
   Card,
 } from "@mui/material";
-import { Delete, ExpandLess, ExpandMore } from "@mui/icons-material";
+import { Close, Delete, ExpandLess, ExpandMore } from "@mui/icons-material";
 import Collapse from "@mui/material/Collapse";
 import { useTranslation } from "react-i18next";
 import ExcelJS from "exceljs";
@@ -104,7 +102,7 @@ const Orders: React.FC = () => {
     const productDetails = sections
       .find((sec) => sec.title === section)
       ?.addresses.find((addr) => addr.address === address)
-      ?.products.find((prod) => prod.name === product);
+      ?.products.find((prod) => prod.id === product);
 
     const productSize = productDetails?.size || 0;
     const productWeight = productDetails?.grossWeight || 0;
@@ -1020,98 +1018,33 @@ const Orders: React.FC = () => {
                   borderRadius: 3,
                 }}
               >
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  sx={{ color: "#2e7d32", mb: 2 }}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    color: "#2e7d32",
+                    marginBottom: "8px",
+                  }}
                 >
-                  {t("previewTitle")}
-                </Typography>
-
-                {/* Desktop View */}
-                <Box sx={{ display: { xs: "none", sm: "block" } }}>
-                  <List>
-                    {selectedProducts.map((item, idx) => {
-                      const productDetails = sections
-                        .find((section) => section.title === item.section)
-                        ?.addresses.find(
-                          (address) => address.address === item.address
-                        )
-                        ?.products.find(
-                          (product) => product.name === item.product
-                        );
-
-                      const productSize = productDetails?.size || 0;
-                      const productWeight = productDetails?.grossWeight || 0;
-                      const totalSize = productSize * item.quantity;
-                      const totalWeight = productWeight * item.quantity;
-
-                      return (
-                        <ListItem
-                          key={idx}
-                          alignItems="flex-start"
-                          secondaryAction={
-                            <IconButton
-                              edge="end"
-                              onClick={() =>
-                                handleQuantityChange(
-                                  item.section,
-                                  item.address,
-                                  item.product,
-                                  0
-                                )
-                              }
-                            >
-                              <Delete color="error" />
-                            </IconButton>
-                          }
-                        >
-                          <Box sx={{ width: "100px", mr: 2 }}>
-                            <img
-                              src={productDetails?.image}
-                              alt={item.product}
-                              style={{
-                                width: "100%",
-                                height: "100%",
-                                objectFit: "cover",
-                              }}
-                              loading="lazy"
-                            />
-                          </Box>
-                          <ListItemText
-                            primary={`${item.section} → ${item.address} → ${item.product}`}
-                            secondary={
-                              <>
-                                {t("quantity")}:{" "}
-                                <Typography
-                                  component="span"
-                                  sx={{ color: "#2e7d32" }}
-                                >
-                                  {item.quantity}
-                                </Typography>
-                                <br />
-                                {t("sizePerUnit")}: {productSize}
-                                <br />
-                                {t("grossPerUnit")}: {productWeight}
-                                <br />
-                                {t("totalSize")}: {totalSize.toFixed(4)}
-                                <br />
-                                {t("totalWeight")}: {totalWeight.toFixed(2)}
-                              </>
-                            }
-                          />
-                        </ListItem>
-                      );
-                    })}
-                  </List>
+                  <Typography
+                    variant="h6"
+                    gutterBottom
+                    sx={{ color: "#2e7d32", mb: 2 }}
+                  >
+                    {t("previewTitle")}
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    color="inherit"
+                    size="small"
+                    onClick={() => setOpenModal(false)}
+                  >
+                    <Close />
+                  </Button>
                 </Box>
-
-                {/* Mobile Cards View */}
                 <Box
                   sx={{
                     display: {
-                      xs: "block",
-                      sm: "none",
                       background: "transparent",
                     },
                   }}
@@ -1133,7 +1066,7 @@ const Orders: React.FC = () => {
                       const totalWeight = productWeight * item.quantity;
 
                       return (
-                        <Grid item xs={6} key={idx}>
+                        <Grid item xs={6} sm={4} key={idx}>
                           <Card
                             sx={{
                               p: 2,
@@ -1141,6 +1074,10 @@ const Orders: React.FC = () => {
                               backgroundColor: "transparent",
                               position: "relative",
                               boxShadow: 2,
+                              width: {
+                                xs: "100%",
+                                sm: "150px",
+                              },
                             }}
                           >
                             <IconButton
@@ -1160,7 +1097,6 @@ const Orders: React.FC = () => {
 
                             <Box
                               sx={{
-                                width: "100%",
                                 mb: 1,
                                 borderRadius: 2,
                                 overflow: "hidden",
@@ -1186,7 +1122,9 @@ const Orders: React.FC = () => {
                                 textAlign: "center",
                               }}
                             >
-                              {item.product}
+                              {i18n.language === "ar"
+                                ? productDetails?.name
+                                : productDetails?.nameEn}
                             </Typography>
 
                             <Typography sx={{ fontSize: "12px" }}>
@@ -1269,18 +1207,10 @@ const Orders: React.FC = () => {
                 {/* Actions */}
                 <Box
                   display="flex"
-                  justifyContent="space-between"
+                  justifyContent="center"
                   mt={2}
                   flexWrap="wrap"
                 >
-                  <Button
-                    variant="outlined"
-                    color="inherit"
-                    onClick={() => setOpenModal(false)}
-                  >
-                    {t("close")}
-                  </Button>
-
                   <Box
                     display="flex"
                     flexDirection={{ xs: "column", sm: "row" }}
