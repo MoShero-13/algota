@@ -102,7 +102,7 @@ const Orders: React.FC = () => {
     const productDetails = sections
       .find((sec) => sec.title === section)
       ?.addresses.find((addr) => addr.address === address)
-      ?.products.find((prod) => prod.id === product);
+      ?.products.find((prod) => prod.name === product);
 
     const productSize = productDetails?.size || 0;
     const productWeight = productDetails?.grossWeight || 0;
@@ -410,6 +410,7 @@ const Orders: React.FC = () => {
             </Button>
           </DialogActions>
         </Dialog>
+
         <Box
           sx={{
             background: " rgba(255, 255, 255, 0.1)",
@@ -424,576 +425,365 @@ const Orders: React.FC = () => {
             },
           }}
         >
-          {i18n.language === "ar" && (
-            <>
-              {sections.map((section, sectionIdx) => (
-                <Box key={sectionIdx} marginBottom={4}>
-                  {/* Section Toggle */}
-                  <ListItemButton
-                    onClick={() => toggleSection(sectionIdx)}
-                    sx={{ display: { xs: "block", lg: "flex" } }}
-                  >
-                    {openSections[sectionIdx] ? <ExpandLess /> : <ExpandMore />}
-                    <ListItemText
-                      primary={section.title}
-                      primaryTypographyProps={{
-                        sx: {
-                          textAlign: "center",
-                          marginTop: "20px",
-                          fontSize: "40px",
-                        },
-                      }}
-                    />
-                    <Box
-                      sx={{
-                        maxWidth: { sm: "80%", md: "400px" },
-                        height: { sm: "100%", md: "400px" },
-                        margin: "auto",
-                        overflow: "hidden",
-                      }}
-                    >
-                      <img
-                        src={section.image}
-                        alt={section.title}
-                        style={{ width: "100%", borderRadius: "14px" }}
-                        loading="lazy"
-                      />
-                    </Box>
-                  </ListItemButton>
-
-                  <Collapse
-                    in={openSections[sectionIdx]}
-                    timeout="auto"
-                    unmountOnExit
-                  >
-                    {section.addresses.map((address, addressIdx) => (
-                      <Box key={addressIdx} marginBottom={2}>
-                        <ListItemButton
-                          onClick={() => toggleAddress(sectionIdx, addressIdx)}
-                          sx={{
-                            textAlign: "center",
-                            backgroundColor: "#007236",
-                            borderRadius: "8px",
-                            marginBottom: "10px",
-                          }}
-                        >
-                          <ListItemText
-                            primary={address.address}
-                            primaryTypographyProps={{
-                              sx: {
-                                textAlign: "center",
-                                fontSize: "20px",
-                              },
-                            }}
-                          />
-                          {openAddresses[sectionIdx]?.[addressIdx] ? (
-                            <ExpandLess />
-                          ) : (
-                            <ExpandMore />
-                          )}
-                        </ListItemButton>
-
-                        <Collapse
-                          in={openAddresses[sectionIdx]?.[addressIdx]}
-                          timeout="auto"
-                          unmountOnExit
-                        >
-                          {/* ✅ جدول للـ Desktop */}
-                          <Box sx={{ display: { xs: "none", md: "block" } }}>
-                            <TableContainer
-                              component={Paper}
-                              sx={{ background: "transparent", color: "#ddd" }}
-                            >
-                              <Table
-                                sx={{
-                                  background: "transparent",
-                                  minWidth: "500px",
-                                }}
-                              >
-                                <TableHead>
-                                  <TableRow>
-                                    <TableCell
-                                      sx={{ color: "#ddd" }}
-                                    ></TableCell>
-                                    <TableCell
-                                      align="right"
-                                      sx={{
-                                        textAlign: "center",
-                                        color: "#ddd",
-                                        minWidth: "100px",
-                                      }}
-                                    >
-                                      اسم المنتج
-                                    </TableCell>
-                                    <TableCell
-                                      align="right"
-                                      sx={{ color: "#ddd" }}
-                                    >
-                                      الوزن
-                                    </TableCell>
-                                    <TableCell
-                                      align="right"
-                                      sx={{
-                                        textAlign: "center",
-                                        color: "#ddd",
-                                        minWidth: "100px",
-                                      }}
-                                    >
-                                      العدد في الطرد
-                                    </TableCell>
-                                    <TableCell
-                                      align="right"
-                                      sx={{
-                                        textAlign: "center",
-                                        color: "#ddd",
-                                      }}
-                                    >
-                                      باركود الطرد
-                                    </TableCell>
-                                    <TableCell
-                                      align="right"
-                                      sx={{
-                                        textAlign: "center",
-                                        color: "#ddd",
-                                        minWidth: "50px",
-                                      }}
-                                    >
-                                      الكمية
-                                    </TableCell>
-                                  </TableRow>
-                                </TableHead>
-                                <TableBody>
-                                  {address.products.map(
-                                    (product, productIdx) => (
-                                      <TableRow key={productIdx}>
-                                        <TableCell
-                                          sx={{
-                                            borderBottom: "1px solid gray",
-                                          }}
-                                        >
-                                          <img
-                                            src={product.image}
-                                            alt={product.name}
-                                            style={{ width: "100px" }}
-                                            loading="lazy"
-                                          />
-                                        </TableCell>
-                                        <TableCell
-                                          align="right"
-                                          sx={{
-                                            textAlign: "center",
-                                            color: "#ddd",
-                                            borderBottom: "1px solid gray",
-                                          }}
-                                        >
-                                          {product.name}
-                                        </TableCell>
-                                        <TableCell
-                                          align="right"
-                                          sx={{
-                                            textAlign: "center",
-                                            color: "#ddd",
-                                            borderBottom: "1px solid gray",
-                                          }}
-                                        >
-                                          {product.pieceWieght}
-                                        </TableCell>
-                                        <TableCell
-                                          align="right"
-                                          sx={{
-                                            textAlign: "center",
-                                            color: "#ddd",
-                                            borderBottom: "1px solid gray",
-                                          }}
-                                        >
-                                          {product.numOf}
-                                        </TableCell>
-                                        <TableCell
-                                          align="right"
-                                          sx={{
-                                            textAlign: "center",
-                                            color: "#ddd",
-                                            borderBottom: "1px solid gray",
-                                          }}
-                                        >
-                                          {product.parcelBarcode}
-                                        </TableCell>
-                                        <TableCell
-                                          align="right"
-                                          sx={{
-                                            textAlign: "center",
-                                            color: "#ddd",
-                                            borderBottom: "1px solid gray",
-                                          }}
-                                        >
-                                          <StyledTextField
-                                            type="number"
-                                            size="small"
-                                            variant="outlined"
-                                            inputProps={{ min: 0 }}
-                                            placeholder="Qty"
-                                            onChange={(e) =>
-                                              handleQuantityChange(
-                                                section.title,
-                                                address.address,
-                                                product.name,
-                                                parseInt(e.target.value, 10) ||
-                                                  0
-                                              )
-                                            }
-                                          />
-                                        </TableCell>
-                                      </TableRow>
-                                    )
-                                  )}
-                                </TableBody>
-                              </Table>
-                            </TableContainer>
-                          </Box>
-                          {/* ✅ كروت للموبايل في Grid */}
-                          <Box sx={{ display: { xs: "block", md: "none" } }}>
-                            <Grid container spacing={2}>
-                              {address.products.map((product, productIdx) => (
-                                <Grid item xs={6} key={productIdx}>
-                                  <Box
-                                    sx={{
-                                      background: "#dddddd17",
-                                      borderRadius: "12px",
-                                      height: "100%",
-                                      boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
-                                      color: "#ddd",
-                                      display: "flex",
-                                      flexDirection: "column",
-                                      justifyContent: "space-between",
-                                    }}
-                                  >
-                                    <Box
-                                      sx={{
-                                        textAlign: "center",
-                                        marginBottom: 1,
-                                      }}
-                                    >
-                                      <img
-                                        src={product.image}
-                                        alt={product.name}
-                                        style={{
-                                          width: "100%",
-                                          borderRadius: "8px",
-                                          objectFit: "cover",
-                                        }}
-                                        loading="lazy"
-                                      />
-                                    </Box>
-                                    <Typography
-                                      variant="h6"
-                                      sx={{
-                                        fontWeight: "bold",
-                                        textAlign: "center",
-                                        fontSize: "16px",
-                                        mb: 1,
-                                      }}
-                                    >
-                                      {product.name}
-                                    </Typography>
-                                    <Typography
-                                      sx={{
-                                        fontSize: "13px",
-                                        marginBottom: "4px",
-                                      }}
-                                    >
-                                      <strong>الوزن :</strong>{" "}
-                                      {product.pieceWieght}
-                                    </Typography>
-                                    <Typography
-                                      sx={{
-                                        fontSize: "13px",
-                                        marginBottom: "4px",
-                                      }}
-                                    >
-                                      <strong>العدد في الطرد :</strong>
-                                      {product.numOf}
-                                    </Typography>
-                                    <Typography
-                                      sx={{
-                                        fontSize: "13px",
-                                        marginBottom: "4px",
-                                      }}
-                                    >
-                                      <strong>باركود : </strong>
-                                      {product.parcelBarcode}
-                                    </Typography>
-                                    <Box
-                                      sx={{
-                                        width: "80%",
-                                        margin: "auto",
-                                        paddingBottom: "10px",
-                                      }}
-                                    >
-                                      <StyledTextField
-                                        type="number"
-                                        size="small"
-                                        variant="outlined"
-                                        inputProps={{ min: 0 }}
-                                        placeholder="الكمية"
-                                        onChange={(e) =>
-                                          handleQuantityChange(
-                                            section.title,
-                                            address.address,
-                                            product.name,
-                                            parseInt(e.target.value, 10) || 0
-                                          )
-                                        }
-                                        fullWidth
-                                      />
-                                    </Box>
-                                  </Box>
-                                </Grid>
-                              ))}
-                            </Grid>
-                          </Box>
-                        </Collapse>
-                      </Box>
-                    ))}
-                  </Collapse>
+          {sections.map((section, sectionIdx) => (
+            <Box key={sectionIdx} marginBottom={4}>
+              {/* Section Toggle */}
+              <ListItemButton
+                onClick={() => toggleSection(sectionIdx)}
+                sx={{ display: { xs: "block", lg: "flex" } }}
+              >
+                {openSections[sectionIdx] ? <ExpandLess /> : <ExpandMore />}
+                <ListItemText
+                  primary={
+                    i18n.language === "ar" ? section.title : section.titleEn
+                  }
+                  primaryTypographyProps={{
+                    sx: {
+                      textAlign: "center",
+                      marginTop: "20px",
+                      fontSize: "40px",
+                    },
+                  }}
+                />
+                <Box
+                  sx={{
+                    maxWidth: { sm: "80%", md: "400px" },
+                    height: { sm: "100%", md: "400px" },
+                    margin: "auto",
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    src={section.image}
+                    alt={section.title}
+                    style={{ width: "100%", borderRadius: "14px" }}
+                    loading="lazy"
+                  />
                 </Box>
-              ))}
-            </>
-          )}
+              </ListItemButton>
 
-          {i18n.language === "en" && (
-            <>
-              {sections.map((section, sectionIdx) => (
-                <Box key={sectionIdx} marginBottom={4}>
-                  {/* Section Toggle */}
-                  <ListItemButton
-                    onClick={() => toggleSection(sectionIdx)}
-                    sx={{ display: { xs: "block", lg: "flex" } }}
-                  >
-                    {" "}
-                    {openSections[sectionIdx] ? <ExpandLess /> : <ExpandMore />}
-                    <ListItemText
-                      primary={section.titleEn}
-                      primaryTypographyProps={{
-                        sx: {
-                          textAlign: "center",
-                          marginTop: "20px",
-                          fontSize: "40px", // Apply font size here
-                        },
-                      }}
-                    />
-                    <Box
+              <Collapse
+                in={openSections[sectionIdx]}
+                timeout="auto"
+                unmountOnExit
+              >
+                {section.addresses.map((address, addressIdx) => (
+                  <Box key={addressIdx} marginBottom={2}>
+                    <ListItemButton
+                      onClick={() => toggleAddress(sectionIdx, addressIdx)}
                       sx={{
-                        maxWidth: {
-                          sm: "80%",
-                          md: "400px",
-                        },
-                        height: {
-                          sm: "100%",
-                          md: "400px",
-                        },
-                        margin: "auto",
-                        overflow: "hidden",
+                        textAlign: "center",
+                        backgroundColor: "#007236",
+                        borderRadius: "8px",
+                        marginBottom: "10px",
                       }}
                     >
-                      <img
-                        src={section.image}
-                        alt={section.titleEn}
-                        style={{
-                          width: "100%",
-                          borderRadius: "14px",
-                        }}
-                        loading="lazy"
-                      />
-                    </Box>
-                  </ListItemButton>
-                  <Collapse
-                    in={openSections[sectionIdx]}
-                    timeout="auto"
-                    unmountOnExit
-                  >
-                    {section.addresses.map((address, addressIdx) => (
-                      <Box key={addressIdx} marginBottom={2}>
-                        <ListItemButton
-                          onClick={() => toggleAddress(sectionIdx, addressIdx)} // Pass both indices
-                          sx={{
+                      <ListItemText
+                        primary={
+                          i18n.language === "ar"
+                            ? address.address
+                            : address.addressEn
+                        }
+                        primaryTypographyProps={{
+                          sx: {
                             textAlign: "center",
-                            backgroundColor: "#007236",
-                            borderRadius: "8px",
-                            marginBottom: "10px",
-                          }}
+                            fontSize: "20px",
+                          },
+                        }}
+                      />
+                      {openAddresses[sectionIdx]?.[addressIdx] ? (
+                        <ExpandLess />
+                      ) : (
+                        <ExpandMore />
+                      )}
+                    </ListItemButton>
+
+                    <Collapse
+                      in={openAddresses[sectionIdx]?.[addressIdx]}
+                      timeout="auto"
+                      unmountOnExit
+                    >
+                      {/* ✅ جدول للـ Desktop */}
+                      <Box sx={{ display: { xs: "none", md: "block" } }}>
+                        <TableContainer
+                          component={Paper}
+                          sx={{ background: "transparent", color: "#ddd" }}
                         >
-                          <ListItemText
-                            primary={address.addressEn}
-                            primaryTypographyProps={{
-                              sx: {
-                                textAlign: "center",
-                                fontSize: "20px", // Apply font size here
-                              },
-                            }}
-                          />
-                          {openAddresses[sectionIdx]?.[addressIdx] ? (
-                            <ExpandLess />
-                          ) : (
-                            <ExpandMore />
-                          )}
-                        </ListItemButton>
-                        <Collapse
-                          in={openAddresses[sectionIdx]?.[addressIdx]}
-                          timeout="auto"
-                          unmountOnExit
-                        >
-                          <TableContainer
-                            component={Paper}
+                          <Table
                             sx={{
                               background: "transparent",
-                              color: "#ddd",
+                              minWidth: "500px",
                             }}
                           >
-                            <Table
-                              sx={{
-                                background: "transparent",
-                                minWidth: "500px",
-                              }}
-                            >
-                              <TableHead>
-                                <TableRow>
-                                  <TableCell sx={{ color: "#ddd" }}></TableCell>
+                            <TableHead>
+                              <TableRow>
+                                <TableCell sx={{ color: "#ddd" }}></TableCell>
+                                <TableCell
+                                  align="right"
+                                  sx={{
+                                    textAlign: "center",
+                                    color: "#ddd",
+                                    minWidth: "100px",
+                                  }}
+                                >
+                                  {i18n.language === "ar"
+                                    ? "اسم المنتج"
+                                    : "Product name"}
+                                </TableCell>
+                                <TableCell align="right" sx={{ color: "#ddd" }}>
+                                  {i18n.language === "ar" ? "الوزن" : "Weight"}
+                                </TableCell>
+                                <TableCell
+                                  align="right"
+                                  sx={{
+                                    textAlign: "center",
+                                    color: "#ddd",
+                                    minWidth: "100px",
+                                  }}
+                                >
+                                  {i18n.language === "ar"
+                                    ? "العدد في الطرد"
+                                    : "Number in parcel"}
+                                </TableCell>
+                                <TableCell
+                                  align="right"
+                                  sx={{
+                                    textAlign: "center",
+                                    color: "#ddd",
+                                  }}
+                                >
+                                  {i18n.language === "ar"
+                                    ? "باركود الطرد"
+                                    : "Parcel barcode"}
+                                </TableCell>
+                                <TableCell
+                                  align="right"
+                                  sx={{
+                                    textAlign: "center",
+                                    color: "#ddd",
+                                    minWidth: "50px",
+                                  }}
+                                >
+                                  {i18n.language === "ar"
+                                    ? "الكمية"
+                                    : "Quantity"}
+                                </TableCell>
+                              </TableRow>
+                            </TableHead>
+                            <TableBody>
+                              {address.products.map((product, productIdx) => (
+                                <TableRow key={productIdx}>
+                                  <TableCell
+                                    sx={{
+                                      borderBottom: "1px solid gray",
+                                    }}
+                                  >
+                                    <img
+                                      src={product.image}
+                                      alt={product.name}
+                                      style={{ width: "100px" }}
+                                      loading="lazy"
+                                    />
+                                  </TableCell>
                                   <TableCell
                                     align="right"
                                     sx={{
                                       textAlign: "center",
                                       color: "#ddd",
-                                      minWidth: "100px",
+                                      borderBottom: "1px solid gray",
                                     }}
                                   >
-                                    Product
-                                  </TableCell>
-                                  <TableCell
-                                    align="right"
-                                    sx={{ textAlign: "center", color: "#ddd" }}
-                                  >
-                                    Weight
+                                    {i18n.language === "ar"
+                                      ? product.name
+                                      : product.nameEn}
                                   </TableCell>
                                   <TableCell
                                     align="right"
                                     sx={{
                                       textAlign: "center",
                                       color: "#ddd",
-                                      minWidth: "100px",
+                                      borderBottom: "1px solid gray",
                                     }}
                                   >
-                                    The number in the package
-                                  </TableCell>
-                                  <TableCell
-                                    align="right"
-                                    sx={{ textAlign: "center", color: "#ddd" }}
-                                  >
-                                    Parcode
+                                    {product.pieceWieght}
                                   </TableCell>
                                   <TableCell
                                     align="right"
                                     sx={{
                                       textAlign: "center",
                                       color: "#ddd",
-                                      minWidth: "50px",
+                                      borderBottom: "1px solid gray",
                                     }}
                                   >
-                                    Quantity
+                                    {product.numOf}
+                                  </TableCell>
+                                  <TableCell
+                                    align="right"
+                                    sx={{
+                                      textAlign: "center",
+                                      color: "#ddd",
+                                      borderBottom: "1px solid gray",
+                                    }}
+                                  >
+                                    {product.parcelBarcode}
+                                  </TableCell>
+                                  <TableCell
+                                    align="right"
+                                    sx={{
+                                      textAlign: "center",
+                                      color: "#ddd",
+                                      borderBottom: "1px solid gray",
+                                    }}
+                                  >
+                                    <StyledTextField
+                                      type="number"
+                                      size="small"
+                                      variant="outlined"
+                                      inputProps={{ min: 0 }}
+                                      placeholder="Qty"
+                                      onChange={(e) =>
+                                        handleQuantityChange(
+                                          section.title,
+                                          address.address,
+                                          product.name,
+                                          parseInt(e.target.value, 10) || 0
+                                        )
+                                      }
+                                    />
                                   </TableCell>
                                 </TableRow>
-                              </TableHead>
-                              <TableBody>
-                                {address.products.map((product, productIdx) => (
-                                  <TableRow key={productIdx}>
-                                    <TableCell
-                                      sx={{
-                                        borderBottom: "1px solid gray",
-                                      }}
-                                    >
-                                      <img
-                                        src={product.image}
-                                        alt={product.nameEn}
-                                        style={{ width: "100px" }}
-                                        loading="lazy"
-                                      />
-                                    </TableCell>
-                                    <TableCell
-                                      align="right"
-                                      sx={{
-                                        textAlign: "center",
-                                        color: "#ddd",
-                                        borderBottom: "1px solid gray",
-                                      }}
-                                    >
-                                      {product.nameEn}
-                                    </TableCell>
-                                    <TableCell
-                                      align="right"
-                                      sx={{
-                                        textAlign: "center",
-                                        color: "#ddd",
-                                        borderBottom: "1px solid gray",
-                                      }}
-                                    >
-                                      {product.pieceWieght}
-                                    </TableCell>
-                                    <TableCell
-                                      align="right"
-                                      sx={{
-                                        textAlign: "center",
-                                        color: "#ddd",
-                                        borderBottom: "1px solid gray",
-                                      }}
-                                    >
-                                      {product.numOf}
-                                    </TableCell>
-                                    <TableCell
-                                      align="right"
-                                      sx={{
-                                        textAlign: "center",
-                                        color: "#ddd",
-                                        borderBottom: "1px solid gray",
-                                      }}
-                                    >
-                                      {product.parcelBarcode}
-                                    </TableCell>
-                                    <TableCell
-                                      align="right"
-                                      sx={{
-                                        textAlign: "center",
-                                        color: "#ddd",
-                                        borderBottom: "1px solid gray",
-                                      }}
-                                    >
-                                      <StyledTextField
-                                        type="number"
-                                        size="small"
-                                        variant="outlined"
-                                        inputProps={{ min: 0 }}
-                                        placeholder="Qty"
-                                        onChange={(e) =>
-                                          handleQuantityChange(
-                                            section.title,
-                                            address.address,
-                                            product.name,
-                                            parseInt(e.target.value, 10) || 0
-                                          )
-                                        }
-                                      />
-                                    </TableCell>
-                                  </TableRow>
-                                ))}
-                              </TableBody>
-                            </Table>
-                          </TableContainer>
-                        </Collapse>
+                              ))}
+                            </TableBody>
+                          </Table>
+                        </TableContainer>
                       </Box>
-                    ))}
-                  </Collapse>
-                </Box>
-              ))}
-            </>
-          )}
+                      {/* ✅ كروت للموبايل في Grid */}
+                      <Box sx={{ display: { xs: "block", md: "none" } }}>
+                        <Grid container spacing={2}>
+                          {address.products.map((product, productIdx) => (
+                            <Grid item xs={6} key={productIdx}>
+                              <Box
+                                sx={{
+                                  background: "#dddddd17",
+                                  borderRadius: "12px",
+                                  height: "100%",
+                                  boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+                                  color: "#ddd",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  justifyContent: "space-between",
+                                }}
+                              >
+                                <Box
+                                  sx={{
+                                    textAlign: "center",
+                                    marginBottom: 1,
+                                  }}
+                                >
+                                  <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    style={{
+                                      width: "100%",
+                                      borderRadius: "8px",
+                                      objectFit: "cover",
+                                    }}
+                                    loading="lazy"
+                                  />
+                                </Box>
+                                <Typography
+                                  variant="h6"
+                                  sx={{
+                                    fontWeight: "bold",
+                                    textAlign: "center",
+                                    fontSize: "16px",
+                                    mb: 1,
+                                  }}
+                                >
+                                  {i18n.language === "ar"
+                                    ? product.name
+                                    : product.nameEn}
+                                </Typography>
+                                <Typography
+                                  sx={{
+                                    fontSize: "13px",
+                                    marginBottom: "4px",
+                                  }}
+                                >
+                                  <strong>
+                                    {" "}
+                                    {i18n.language === "ar"
+                                      ? "الوزن"
+                                      : "Weight"}
+                                  </strong>{" "}
+                                  {product.pieceWieght}
+                                </Typography>
+                                <Typography
+                                  sx={{
+                                    fontSize: "13px",
+                                    marginBottom: "4px",
+                                  }}
+                                >
+                                  <strong>
+                                    {" "}
+                                    {i18n.language === "ar"
+                                      ? "العدد في الطرد"
+                                      : "Number in parcel"}
+                                  </strong>
+                                  {product.numOf}
+                                </Typography>
+                                <Typography
+                                  sx={{
+                                    fontSize: "13px",
+                                    marginBottom: "4px",
+                                  }}
+                                >
+                                  <strong>
+                                    {i18n.language === "ar"
+                                      ? "باركود الطرد"
+                                      : "Parcel barcode"}
+                                  </strong>
+                                  {product.parcelBarcode}
+                                </Typography>
+                                <Box
+                                  sx={{
+                                    width: "80%",
+                                    margin: "auto",
+                                    paddingBottom: "10px",
+                                  }}
+                                >
+                                  <StyledTextField
+                                    type="number"
+                                    size="small"
+                                    variant="outlined"
+                                    inputProps={{ min: 0 }}
+                                    placeholder={
+                                      i18n.language === "ar"
+                                        ? "الكمية"
+                                        : "Quantity"
+                                    }
+                                    onChange={(e) =>
+                                      handleQuantityChange(
+                                        section.title,
+                                        address.address,
+                                        product.name,
+                                        parseInt(e.target.value, 10) || 0
+                                      )
+                                    }
+                                    fullWidth
+                                  />
+                                </Box>
+                              </Box>
+                            </Grid>
+                          ))}
+                        </Grid>
+                      </Box>
+                    </Collapse>
+                  </Box>
+                ))}
+              </Collapse>
+            </Box>
+          ))}
 
           {/* Modal for reviewing selections */}
           <Modal
@@ -1069,7 +859,10 @@ const Orders: React.FC = () => {
                         <Grid item xs={6} sm={4} key={idx}>
                           <Card
                             sx={{
-                              p: 2,
+                              p: {
+                                xs: "3px",
+                                sm: 2,
+                              },
                               borderRadius: 2,
                               backgroundColor: "transparent",
                               position: "relative",
