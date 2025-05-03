@@ -286,21 +286,41 @@ const Footer = () => {
               <Box mt={2}>
                 <Typography
                   variant="body1"
-                  sx={{ display: "flex", alignItems: "center", mb: 1 }}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    mb: 1,
+                    maxWidth: "230px",
+                    justifyContent: "space-between",
+                    margin: "auto",
+                  }}
                 >
                   <FaMapMarkerAlt style={{ marginRight: "8px" }} />
                   {t("address")}
                 </Typography>
                 <Typography
                   variant="body1"
-                  sx={{ display: "flex", alignItems: "center", mb: 1 }}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    mb: 1,
+                    maxWidth: "230px",
+                    justifyContent: "space-between",
+                    margin: "auto",
+                  }}
                 >
                   <FaPhone style={{ marginRight: "8px" }} />
                   +963-944218493
                 </Typography>
                 <Typography
                   variant="body1"
-                  sx={{ display: "flex", alignItems: "center" }}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    maxWidth: "230px",
+                    justifyContent: "space-between",
+                    margin: "auto",
+                  }}
                 >
                   <FaEnvelope style={{ marginRight: "8px" }} /> info@al-gota.net
                 </Typography>

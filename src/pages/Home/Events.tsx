@@ -1,27 +1,58 @@
-import { useTranslation } from "react-i18next";
+import { Box, Container, Grid, Paper, Typography } from "@mui/material";
+import { styled } from "@mui/system";
+import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 import useEvents from "../../hooks/useEvents";
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import theme from "../../theme/theme";
 import { motion } from "motion/react";
 
-const styles = {
-  padding: "25px",
-  fontSize: "20px",
-  textAlign: "center",
-  lineHeight: "1.5",
+const StyledPaper = styled(Paper)(() => ({
   background: "rgba(255, 255, 255, 0.1)",
   backdropFilter: "blur(8px)",
-  color: "#fff",
+  padding: "2rem",
   borderRadius: "14px",
-};
+  transition: "transform 0.3s ease-in-out",
+  "&:hover": {
+    transform: "translateY(-5px)",
+  },
+}));
+
+const ImageContainer = styled(Box)({
+  position: "relative",
+  height: "100%",
+  minHeight: "400px",
+  overflow: "hidden",
+  borderRadius: "14px",
+  "& img": {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    transition: "transform 0.3s ease",
+  },
+  "&:hover img": {
+    transform: "scale(1.05)",
+  },
+});
+
+const GradientOverlay = styled(Box)({
+  position: "absolute",
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0,
+});
 
 const Events = () => {
+  /* -------------------------------------------------------------------------- */
+  /*                                  useEvents                                 */
+  /* -------------------------------------------------------------------------- */
   const { data } = useEvents();
   /* -------------------------------------------------------------------------- */
-  /*                                 Translation                                */
+  /*                               useTranslation                               */
   /* -------------------------------------------------------------------------- */
-  const [t] = useTranslation();
+  const [t, i18n] = useTranslation();
 
   return (
     <>
@@ -49,16 +80,7 @@ const Events = () => {
           {t("news-h2")}
         </motion.h1>
       </Box>
-      <Box
-        sx={{
-          width: {
-            xs: "90%",
-            md: "80%",
-          },
-          margin: "60px auto 0",
-          borderRadius: "8px",
-        }}
-      >
+      <Box sx={{ width: { md: "80%" }, margin: "auto" }}>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -80,96 +102,107 @@ const Events = () => {
         >
           {data.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <Box
-                sx={{
-                  display: {
-                    sm: "block",
-                    md: "flex",
-                  },
-                }}
-              >
-                <Box
-                  component="img"
-                  src={slide.image}
-                  alt="Slide"
-                  sx={{
-                    width: {
-                      xs: "100%",
-                      sm: "100%",
-                      md: "50%",
-                    },
-                    height: {
-                      xs: "250px", // for small screens
-                      sm: "300px", // for small screens
-                      md: "350px", // for medium screens
-                      lg: "400px", // for large screens
-                    },
-                    objectFit: "cover",
-                    borderRadius: "8px",
-                  }}
-                />
-                <Box sx={{ alignContent: "center" }}>
-                  <Card
+              <div dir={t("dir")}>
+                <Container maxWidth="lg" sx={{ py: 4 }}>
+                  <Grid
                     key={slide.id}
-                    sx={{
-                      ...styles,
-                      width: {
-                        xs: "250px",
-                        sm: "400px",
-                        md: "350px",
-                        lg: "500px",
-                      },
-                      height: {
-                        xs: "300px",
-                        sm: "300px",
-                        md: "250px",
-                        lg: "250px",
-                      },
-                      direction: "rtl",
-                      margin: "10px auto",
-                      boxShadow: "none",
-                      transform: {
-                        xs: "translateY(-30px)",
-                        sm: "translateY(-30px)",
-                        md: "translateX(-30px)",
-                      },
-                    }}
+                    container
+                    spacing={4}
+                    alignItems="stretch"
                   >
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant="h5"
-                        component="div"
-                        style={{ color: "#3fdb89", height: "30%" }}
+                    <Grid
+                      item
+                      xs={12}
+                      md={6}
+                      sx={{
+                        transform: {
+                          md:
+                            i18n.language === "ar"
+                              ? "translateX(-45px)  translateY(25px)"
+                              : "translateX(45px) translateY(25px)",
+                        },
+                        transition: "transform 0.3s ease",
+                        zIndex: "10",
+                      }}
+                    >
+                      <StyledPaper elevation={3}>
+                        <Typography
+                          component="h1"
+                          gutterBottom
+                          sx={{
+                            fontWeight: 700,
+                            color: "#3fdb89",
+                            fontSize: { xs: "24px", md: "28px" },
+                          }}
+                        >
+                          {i18n.language === "ar"
+                            ? slide.exhibition
+                            : slide.exhibitionEn}
+                        </Typography>
+
+                        <Box
+                          sx={{ display: "flex", alignItems: "center", mb: 2 }}
+                        >
+                          <FaCalendarAlt
+                            size={20}
+                            style={{ margin: "0 8px", color: "#EC1F27" }}
+                          />
+                          <Typography variant="h6" sx={{ color: "#fff" }}>
+                            {" "}
+                            {slide.date}
+                          </Typography>
+                        </Box>
+
+                        <Box
+                          sx={{ display: "flex", alignItems: "center", mb: 3 }}
+                        >
+                          <FaMapMarkerAlt
+                            size={20}
+                            style={{ margin: "0 8px", color: "#EC1F27" }}
+                          />
+                          <Typography variant="h6" sx={{ color: "#fff" }}>
+                            {" "}
+                            {i18n.language === "ar"
+                              ? slide.place
+                              : slide.placeEn}
+                          </Typography>
+                        </Box>
+
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            maxWidth: "380px",
+                            mb: 4,
+                            lineHeight: 1.8,
+                            color: "#fff",
+                          }}
+                        >
+                          {i18n.language === "ar"
+                            ? slide.content
+                            : slide.contentEn}
+                        </Typography>
+                      </StyledPaper>
+                    </Grid>
+
+                    <Grid item xs={12} md={6}>
+                      <ImageContainer
+                        sx={{
+                          [theme.breakpoints.down("sm")]: {
+                            transform: "translateY(-70px)",
+                          },
+                        }}
                       >
-                        {slide.exhibition}
-                      </Typography>
-                    </CardContent>
-                    <Typography
-                      sx={{
-                        alignContent: "center",
-                        color: "#ddd",
-                        height: "30%",
-                        fontSize: "16px",
-                      }}
-                    >
-                      {t("place")} : {slide.place} | {t("date")} :{slide.date}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      sx={{
-                        alignContent: "center",
-                        color: "#ddd",
-                        height: "30%",
-                        fontSize: "18px",
-                        fontWeight: "600",
-                      }}
-                    >
-                      {slide.content}
-                    </Typography>
-                  </Card>
-                </Box>
-              </Box>
+                        <img
+                          src={slide.image}
+                          alt="Tech Innovation Summit"
+                          loading="lazy"
+                        />
+                        <GradientOverlay />
+                      </ImageContainer>
+                    </Grid>
+                  </Grid>
+                </Container>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
