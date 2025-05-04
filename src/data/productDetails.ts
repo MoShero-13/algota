@@ -2007,7 +2007,7 @@ export default [
     descrption:
       "زيتون أخضر مشوي - زيت أخضر سلقيني - زيتون أسود شرائح - زيتون أسود كلمتا... ",
     descrptionEn:
-      "Grilled green olives - green celine oil - black olives slices - black olives are words ...",
+      "Grilled green olives - green celine oil - black olives slices ...",
     descrption1:
       "- تقدم شركتنا هذا المنتج بكل اصنافه وانواعه كما تقدمه ربات البيوت لكن بطريقة مطورة.",
     descrption1En:
@@ -2595,7 +2595,7 @@ export default [
     descrption:
       "بازلاء خضراء - حبوب ذرة حلوة - فطر مقطع - فول أخضر - حمص بالطحينة... ",
     descrptionEn:
-      "Green peas - sweet atom - chopped mushrooms - green beans - chickpeas with tahini ...",
+      "Green peas - sweet atom - chopped mushrooms - green beans ...",
     descrption1:
       "- اليالنجي أكلة شامية سورية تتمثل أساسا في ورق عنب ملفوف يتم حشوه بخليط من الخضراوات بالإضافة إلى معلبات جاهزة للتقديم مع او بدون تسخين .",
     descrption1En:
@@ -2763,7 +2763,7 @@ export default [
     descrption:
       "زهورات مشكلة - مليسة - زعتر بري - عشرق - ميرمية - ورق غار - كركديه - شاي أخضر - زهر بابونج... ",
     descrptionEn:
-      "Followed Flowers - Melissa - Daatar Berry - Ten - Mirmiya - Brex Paper - Hibiscus - Green Tea - Babong Blossom ...",
+      "Followed Flowers - Melissa - Daatar Berry - Ten - Mirmiya - Brex Paper - Hibiscus ...",
     descrption1:
       "- الأعشاب الطبيعية الشامية لكافة انواعها وبتعبات مختلفة تميز شركة الغوطة من بدايتها.",
     descrption1En:
@@ -2921,11 +2921,10 @@ export default [
     image: img9,
     insideImage: image9,
     name: "قسم الخلطات الشامية",
-    nameEn: "The Levantine Mixers",
+    nameEn: "Levantine Mixers",
     descrption:
       "خلطة الفلافل - خلطة الفلافل مع قالب - مجروش الكعك - خلطة الكبة النية مع الصلصة... ",
-    descrptionEn:
-      "Falafel mixture - falafel mixture with a template - crushed cakes - kibbeh mixture with the sauce ...",
+    descrptionEn: "Falafel mixture - falafel mixture with a template ...",
     descrption1:
       "- لان المائدة الشامية لا تكتمل إلا بوجود هذه الاصناف , قدمنا لكم مجموعة من خلطاتنا الشامية التي تتميز بسهولة التحضير ولذة المذاق.",
     descrption1En:
@@ -3001,9 +3000,9 @@ export default [
     name: "قسم الرمضانيات",
     nameEn: "Ramadan section",
     descrption:
-      "عرقسوس بلدي - عجوة ناعمة - قمر الدين - شراب التوت الشامي المركز - شراب الجلاب المركز...",
+      "عرقسوس بلدي - عجوة ناعمة - قمر الدين - شراب التوت الشامي المركز ...",
     descrptionEn:
-      "I Archosos Baladi - Soft Ajoa - Qamar Al -Din - Chami Raspberry Syrup - concentrated jellab syrup ...",
+      "I Archosos Baladi - Soft Ajoa - Qamar Al -Din - Chami Raspberry Syrup  ...",
     descrption1:
       "- مائدة رمضان تجمع شمل افراد العائلة , لذلك اخترنا لكم تشكيلة واسعة منها .",
     descrption1En:
@@ -3146,8 +3145,7 @@ export default [
     nameEn: "Vinegar and Liquids section",
     descrption:
       "خل التفاح - خل عنب - خل أبيض - حامض حصرم - ماء ورد - ماء زهر - بديل الليمون... ",
-    descrptionEn:
-      "Apple cider vinegar - grape vinegar - white vinegar - a bishop acid - rose water - blossom water - lemon substitute ...",
+    descrptionEn: "Apple cider vinegar - grape vinegar - white vinegar ...",
     descrption1:
       "- تفتخر شركة الغوطة بان نقدم لكم الخل بانواعه المختلفة من اجود الثمار ويعتبر الخل ذو مذاق لذيذ حيث يضيف نكهة شهية للاطباق مثل السلطة والخضراوات .",
     descrption1En:
@@ -3376,8 +3374,7 @@ export default [
     nameEn: "Sweets and Cakes section",
     descrption:
       "كعك شامي سادة - كعك شامي بالسمسم - كعك شامي مالح - برازق - راحة الحلقوم... ",
-    descrptionEn:
-      "Shami cakes are gentle - Shami cakes with sesame - Shami salty cakes - Barqa - The comfort of the throat ...",
+    descrptionEn: "Shami cakes are gentle - Shami cakes with sesame ...",
     descrption1:
       "- الحلويات هي تاج المطبخ العربي والبرازق الشامية وراحة الحلقوم اختصاص المطبخ السوري , كما تقدم شركتنا الكعك الشامي الممتاز بأنواعه المختلفة المصنعة من اجود انواع الدقيق والسمسم .",
     descrption1En:
@@ -3503,7 +3500,7 @@ export default [
     descrption:
       "مخلل خيار - مخلل قثاء - مخلل فليفلة - مخلل لفت - مخلل ثوم - مخلل خضار مشكلة... ",
     descrptionEn:
-      "Pickled Cucumber - pickled cucumbers - pickled pepper - pickled knock - pickled garlic - mixed vegetables formed ...",
+      "Pickled Cucumber - pickled cucumbers - pickled pepper - pickled knock ...",
     descrption1:
       "- يعتبر المخلل من المقبلات الفاتحة لشهية التي تتميز بطعمها الذي يجمع بين المذاق اللاذع والحامض لذلك جمعنا لكم اصناف مختلفة من المخللات المصنعة حسب الطريقة السورية , بغضافة الى المخللات العراقية المميزة .",
     descrption1En:
@@ -3860,10 +3857,9 @@ export default [
     insideImage: image14,
     name: "قسم المساحيق الغذائية",
     nameEn: "Food Powers section",
-    descrption:
-      "خلطة البشاميل - خلطة البيتزا - كريم كراميل - جيليه طبيعي - كريم شانتيه شوكولا... ",
+    descrption: "خلطة البشاميل - خلطة البيتزا - كريم كراميل - جيليه طبيعي ... ",
     descrptionEn:
-      "Bechamel mix - pizza mixture - Karim Caramel - Natural Gilae - Cream Shanta Chocolate ...",
+      "Bechamel mix - pizza mixture - Karim Caramel - Natural Gilaem ...",
     descrption1:
       "- لاننا نهتم براحة سيدة المنزل اخترنا مجموعة من المساحيق الغذائية سهلة التحضير التي تضيف الى مناسبتها نكهة مميزة .",
     descrption1En:
@@ -4077,7 +4073,7 @@ export default [
     name: "قسم معجون الطماطم",
     nameEn: "Tomato paste section",
     descrption: "كتشب حلو - كتشب حار - معجون طماطم - صلصة فليفلة حارة ... ",
-    descrptionEn: "Ketchup - Hot Ketchup - tomato paste - hot pepper sauce ...",
+    descrptionEn: "Ketchup - Hot Ketchup - tomato paste...",
     descrption1:
       "- معجون الطماطم مشتقاته المستخلصة على طريق البيت الشامي بلمسات مواكبة لتقنية التصنيع الغذائي الحديثة.",
     descrption1En:
@@ -4290,8 +4286,7 @@ export default [
     name: "قسم الحبوب والبقوليات",
     nameEn: "Grains and legumes section",
     descrption: "- فول عريض - فريكة بلدية - جريش عراقي - كشك بلدي ... ",
-    descrptionEn:
-      "- wide bean - municipal freeze - Iraqi groats - a municipal booth ...",
+    descrptionEn: "- wide bean - municipal freeze - Iraqi groats ...",
     descrption1:
       "- خبرات الشام من الحبوب بين ايديكم تشكيلة من الحبوب المحلية والاكلات العربية العريقة .",
     descrption1En:
@@ -4443,8 +4438,7 @@ export default [
     nameEn: "Glass canned section ",
     descrption:
       "باذنجان محشي - طماطم مقشرة - فطر مقطع - صلصة البيتزا - دبس فليفلة حارة ...",
-    descrptionEn:
-      "Grilled Eggplant - Peeled tomatoes - Sliced mushroom - Pizza sauce - hot peppe ...",
+    descrptionEn: "Grilled Eggplant - Peeled tomatoes - Sliced mushroom ...",
     descrption1:
       "- كماليات المطبخ من الخضراوات الطازجة معباة باحجام مختلفة وبجودة عالية.",
     descrption1En:
@@ -4602,7 +4596,7 @@ export default [
     descrption:
       "حلاوة بالفستق - حلاوة سادة - حلاوة كبير - حلاوة وسط - طحينة كبير - طحينة صغير ... ",
     descrptionEn:
-      "Halva with pistachios - samll halva - large halva - large tahini - small tahini ...",
+      "Halva with pistachios - samll halva - large halva - large tahini...",
     descrption1:
       "- تعد الحلاوة الطحينية من أكثر الأصناف التي تحظى بإعجاب الكثيرين حول العالم لذلك نقدمها لكم ضمن عبوات متوفرة باحجام مختلفة وترضي كافة الاحتياجات والأذواق.",
     descrption1En:
@@ -4718,8 +4712,7 @@ export default [
     nameEn: "Molasses section",
     descrption:
       "دبس العنب السائل - دبس العنب -دبس التمر - دبس رمان طبيعي - صلصة دبس الرمان ... ",
-    descrptionEn:
-      "Liquid grape molasses - grape molasses - dates molasses - natural pomegranate molasses - pomegranate molasses sauce ...",
+    descrptionEn: "Liquid grape molasses - grape molasses - dates molasses ...",
     descrption1:
       "- اخترنا لكم بعناية دبس العنب والتمر بنوعيه السائل والجامد المحضر من اجود انواع الثمار ويعتبر من الاصناف المفيدة لانه يزود الجسم بالطاقة,ومن المنتجات ذات الفوائد الصحية لشركتنا دبس رمان طبيعي ومعبا بعبوات ذات أحجام متنوعة.",
     descrption1En:
