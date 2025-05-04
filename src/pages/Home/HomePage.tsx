@@ -5,10 +5,14 @@ import Places from "./Places";
 import Events from "./Events";
 import News from "./News";
 import Footer from "./Footer";
+import Preloader from "../../components/Preloader";
+import ProductPopup from "./ProductPopUp";
 
 const HomePage = () => {
   return (
     <>
+      <Preloader />
+      <ProductPopup />
       <Landing1 />
       <AboutUs />
       <Products />
