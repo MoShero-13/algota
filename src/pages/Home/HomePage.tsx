@@ -6,7 +6,7 @@ import Events from "./Events";
 import News from "./News";
 import Footer from "./Footer";
 import Preloader from "../../components/Preloader";
-import ProductPopup from "./ProductPopUp";
+import ProductPopup from "./ProductPopup";
 
 const HomePage = () => {
   return (

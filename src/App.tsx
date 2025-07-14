@@ -15,9 +15,12 @@ function App() {
     }
   }, [location]);
 
+  const hideNavbar =
+    location.pathname === "/login" || location.pathname === "/AdminPanel";
+
   return (
     <>
-      <NavBar />
+      {!hideNavbar && <NavBar />}
       <div id="main">
         <Outlet />
       </div>

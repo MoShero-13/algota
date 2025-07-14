@@ -5,14 +5,17 @@ import {
   Skeleton,
   Typography,
 } from "@mui/material";
-import useProducts from "../../hooks/useProducts";
+// import useProducts from "../../hooks/useProducts";
 import Grid from "@mui/material/Grid2";
 import { useTranslation } from "react-i18next";
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "motion/react";
+import useCategories from "../../hooks/useCategories";
 
 const Products = () => {
-  const { data } = useProducts();
+  // const { data } = useProducts();
+  const { data } = useCategories();
+
   /* -------------------------------------------------------------------------- */
   /*                                 Translation                                */
   /* -------------------------------------------------------------------------- */
@@ -77,7 +80,7 @@ const Products = () => {
                 <CardMedia
                   sx={{ width: "50%" }}
                   image={index.image}
-                  title={index.name}
+                  title={index.name_ar}
                 />
               ) : (
                 <Skeleton variant="rectangular" width={"100%"} height={200} />
@@ -102,12 +105,12 @@ const Products = () => {
                       component="div"
                       dir="ltr"
                     >
-                      {index.nameEn}
+                      {index.name_en}
                     </Typography>
                   )}
                   {i18n.language === "ar" && (
                     <Typography gutterBottom variant="h5" component="div">
-                      {index.name}
+                      {index.name_ar}
                     </Typography>
                   )}
                   {i18n.language === "en" && (
@@ -115,12 +118,12 @@ const Products = () => {
                       variant="body2"
                       sx={{ direction: "ltr", color: "#ddd" }}
                     >
-                      {index.descrptionEn}
+                      {index.description_en}
                     </Typography>
                   )}
                   {i18n.language === "ar" && (
                     <Typography variant="body2" sx={{ color: "#ddd" }}>
-                      {index.descrption}
+                      {index.description_ar}
                     </Typography>
                   )}
                 </CardContent>
