@@ -7,4 +7,5 @@ export interface Category {
   description1_ar: string;
   description1_en: string;
   image: string;
+  inside_image: string;
 }

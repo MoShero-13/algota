@@ -94,7 +94,7 @@ const ProductsDetails = () => {
       >
         <Box
           component="img"
-          src={category.image}
+          src={category.inside_image}
           loading="lazy"
           alt={i18n.language === "ar" ? category.name_ar : category.name_en}
           sx={{
