@@ -35,13 +35,9 @@ function EndFooter() {
         <p className="span">{t("footer-span1")} &copy; 2024</p>
         <p className="span-2">
           {t("footer-span3")} :{" "}
-          <a href="https://bayanaldowir.carrd.co">
-            <span className="name-1">{t("footer-span4")}</span>
+          <a href="https://relix-ten.vercel.app/">
+            <span className="name-1">Relix</span>
           </a>{" "}
-          &
-          <a href="https://mohammadsh.carrd.co">
-            <span className="name-1">{t("footer-span5")}</span>
-          </a>
         </p>
       </div>
     </footer>

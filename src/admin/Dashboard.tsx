@@ -50,7 +50,10 @@ const Dashboard = () => {
         }}
       >
         {/* العنوان على اليمين */}
-        <Typography variant="h4" sx={{ color: "#fff" }}>
+        <Typography
+          variant="h4"
+          sx={{ color: "#fff", textShadow: "7px 8px 15px", opacity: "0.8" }}
+        >
           لوحة التحكم
         </Typography>
 
@@ -60,14 +63,14 @@ const Dashboard = () => {
             variant="outlined"
             onClick={() => navigate("/")}
             sx={{
+              backgroundColor: "#007236",
+              color: "#fff",
               borderColor: "#007236",
-              color: "#007236",
-              backgroundColor: "#fff",
               transition: "all 0.3s ease",
               "&:hover": {
-                backgroundColor: "#007236",
-                color: "#fff",
                 borderColor: "#007236",
+                color: "#007236",
+                backgroundColor: "#fff",
               },
             }}
           >
@@ -81,14 +84,14 @@ const Dashboard = () => {
               navigate("/login");
             }}
             sx={{
+              backgroundColor: "#d32f2f",
+              color: "#fff",
               borderColor: "#d32f2f",
-              color: "#d32f2f",
-              backgroundColor: "#fff",
               transition: "all 0.3s ease",
               "&:hover": {
-                backgroundColor: "#d32f2f",
-                color: "#fff",
                 borderColor: "#d32f2f",
+                color: "#d32f2f",
+                backgroundColor: "#fff",
               },
             }}
           >
@@ -102,17 +105,18 @@ const Dashboard = () => {
         value={tabIndex}
         onChange={handleTabChange}
         centered
-        TabIndicatorProps={{
-          style: { backgroundColor: "rgb(63, 219, 137)" }, // لون المؤشر السفلي
-        }}
         sx={{
-          "& .MuiTab-root": {
-            color: "#fff", // التبويبات غير المحددة
-            fontWeight: 500,
-            transition: "all 0.3s ease",
+          "& .MuiTabs-indicator": {
+            backgroundColor: "#3fdb89", // الأخضر الحقيقي
+            height: 3,
           },
-          "& .Mui-selected": {
-            color: "#3fdb89", // التبويب المحدد
+          "& .MuiTab-root": {
+            color: "#fff", // النص في التبويبات غير المحددة
+            fontWeight: 500,
+            fontFamily: "'cocon-next-arabic', sans-serif",
+          },
+          "& .MuiTab-root.Mui-selected": {
+            color: "#3fdb89", // النص عند التحديد
             fontWeight: "bold",
           },
         }}

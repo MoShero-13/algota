@@ -280,12 +280,13 @@ const ProductPanel = () => {
               variant="outlined"
               onClick={() => setSelectedCategoryId(null)}
               sx={{
-                color: "#007236",
-                borderColor: "#007236",
+                color: "#fff",
+                backgroundColor: "rgba(0, 114, 54, 0.05)",
+                borderColor: "#fff",
                 borderRadius: 2,
                 "&:hover": {
-                  backgroundColor: "rgba(0, 114, 54, 0.05)",
                   borderColor: "#007236",
+                  backgroundColor: "#007236",
                 },
               }}
             >
